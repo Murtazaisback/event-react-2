@@ -53,7 +53,7 @@ const SilderImages = () => {
                 }}
                 // navigation={true}
                 modules={[Autoplay, Pagination,]}
-                className="mySwiper"
+                className="mySwiper mobile_imgs"
             >
                 <SwiperSlide>
                     <Image src={Des_2} alt='des_2' />
@@ -62,7 +62,7 @@ const SilderImages = () => {
                     <Image src={Des_1} alt='des_1' />
                 </SwiperSlide>
                 <SwiperSlide>
-                    <Image src={Des_3} alt='des_3' /> 
+                    <Image src={Des_3} alt='des_3' className='mobile_imgs'/> 
                 </SwiperSlide>
             </Swiper>
             </>

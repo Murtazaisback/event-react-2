@@ -11,15 +11,27 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    padding-top: auto;
   }
   
   .swiper-slide img {
     /* padding: 100px; */
-    display: block;
+    /* display: block; */
+    padding: 20px;
     width: 90%;
     height: 100%;
+    border-radius: 25px !important;
     object-fit: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
  .heading_b{
   margin-bottom: 30px;
+ }
+
+
+
+ .mobile_imgs  {
+  margin-top: 20px;
  }
