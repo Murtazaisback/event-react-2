@@ -128,9 +128,6 @@ export default function Home() {
                 <p>Use our built-in designer to <br /> customize your seating chart and  <br /> allow customers to select their<br />seats at checkout</p>
               </div>
             </motion.div>
-            <div>
-              
-            </div>
           </div>
         </div>
         <motion.div

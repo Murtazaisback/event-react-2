@@ -29,11 +29,11 @@ const Header = () => {
             <div className={`menu ${isOpen ? 'open' : ''}`}>
 
                 <ul className="navs-links" >
-                    <li><a href="/">Home</a></li>
+                    <li><Link href="/">Home</Link></li>
                     <li><Link href="/Pricing">Pricing</Link></li>
                     <li><Link href="/Events">EVENTS</Link></li>
                     <li><Link className="login-button pc_none" href="/Login">Login</Link></li>
-                    <li><a href="./newevent.html" className="li_active">CREATE EVENT</a></li>
+                    <li><Link href="/NewEvent" className="li_active">CREATE EVENT</Link></li>
                 </ul>
             </div>
             <Link href="/Login" className="login-button yellow_cr res_none">Login</Link>

@@ -10,7 +10,8 @@ import Render from './Renderer Desktop - Stadium 2.png'
 import About_img from './pexels-wendy-wei-1916817 1.png'
 import Ellispse from './Ellipse.png'
 import Landingmain from './landingMain.png'
-
+import Ellis_3 from './Ellipse 3.png'
+import Publish_img from "./Designer - Section 1.png"
 
 export{
     Logo,
@@ -25,6 +26,7 @@ export{
     About_img,
     Ellispse,
     Landingmain,
-    
+    Ellis_3,
+    Publish_img,
 
 }
