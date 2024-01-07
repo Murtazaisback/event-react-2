@@ -3,8 +3,9 @@ import { FaChevronDown, FaChevronUp } from 'react-icons/fa'
 import { FaXmark } from 'react-icons/fa6'
 import "./index.css"
 import { CiCirclePlus } from 'react-icons/ci'
+import Link from 'next/link'
 
-const TicketPrice = () => {
+const TicketPrice = ({ title = '',  label = '', href = '' })  => {
     const [dsVisible, setDsVisible] = useState(true);
     const [formSecVisible, setFormSecVisible] = useState(false);
     const [iconDirection, setIconDirection] = useState('down'); // 'down' or 'up'
@@ -39,7 +40,9 @@ const TicketPrice = () => {
 
     return (
         <div id="Prices" className="w3-container w3-border city" >
+            {title && <h2 className='Archived_heading'>{title}</h2>}
             <form action="Create_event" className="event_froml">
+
                 <div className=" ticket_form">
 
                     <div className="form_price_option">
@@ -264,8 +267,7 @@ const TicketPrice = () => {
                     </div>
                     <div className="next_btn">
 
-                        <a className="w3-bar-item w3-button tablink tab_btn " href="./Publish Event.html">Next
-                        </a>
+                        <Link className="w3-bar-item w3-button tablink tab_btn " href={href}>{label}</Link>
                     </div>
                 </div>
 

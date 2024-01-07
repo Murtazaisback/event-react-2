@@ -768,79 +768,8 @@ footer {
 
 
 
-/* ---------------------table------------------- */
-.dash_container {
-    width: 100%;
-    display: flex;
-    /* justify-content: center; */
-    /* align-items: center; */
-    gap: 60px;
 
-}
 
-.dash_data {
-    width: 60%;
-    display: flex;
-    flex-direction: column;
-}
-
-.dash_options {
-    width: 30%;
-    display: flex;
-    flex-direction: column;
-    /* align-items: flex-end; */
-    gap: 20px;
-}
-
-.upcoming_events {
-    width: 100%;
-    /* text-align: center; */
-    /* display: flex; */
-    /* justify-content: center; */
-    text-align: left;
-    display: flex;
-    flex-wrap: wrap;
-    border-radius: 10px;
-    background: radial-gradient(90.84% 51.46% at 12.16% 50%, rgba(38, 38, 38, 0.20) 0%, rgba(0, 0, 0, 0.00) 100%), radial-gradient(243.33% 331.01% at 100% 100%, rgba(250, 225, 0, 0.10) 0%, rgba(103, 93, 0, 0.01) 56.25%), rgba(0, 0, 0, 0.10);
-    box-shadow: 2px 2px 4px 0px #212121 inset, -2px -2px 4px 0px #25251F inset, 10px 10px 20px 0px rgba(0, 0, 0, 0.25);
-    padding: 20px;
-    padding-top: 20px;
-    /* padding-right: 10px; */
-}
-
-.upcoming_events table thead tr th {
-    padding: 7px;
-}
-
-.upcoming_events table thead tr th:nth-child(1) {
-    width: 150px;
-}
-
-.upcoming_events table thead tr th:nth-child(2) {
-    width: 350px;
-    text-align: center;
-}
-
-.upcoming_events table thead tr th:nth-child(3) {
-    width: 250px;
-    text-align: right;
-}
-
-.upcoming_events table tbody tr td:nth-child(2) {
-    text-align: center;
-}
-
-.upcoming_events table tbody tr td:nth-child(3) {
-    text-align: right;
-}
-
-.upcoming_events table caption {
-    padding: 10px;
-}
-
-.upcoming_events table tbody tr td {
-    padding: 7px;
-}
 
 
 
@@ -1197,7 +1126,8 @@ footer {
     /* align-items: flex-end; */
     align-items: center;
     flex-direction: column;
-    max-width: 90%;
+    /* max-width: 90%; */
+    /* width: 90%; */
     gap: 20px;
     align-items: flex-end;
     padding-top: 40px;
@@ -1533,7 +1463,7 @@ input:checked+.slider:before {
 }
 
 .para {
-    width: 60%;
+    width: 70%;
     padding: 30px;
     text-align: center;
     border-radius: 10px;
@@ -1543,8 +1473,9 @@ input:checked+.slider:before {
 }
 
 .events_row_1 .new_event_list {
-    width: 30%;
-    height: 90px;
+    /* width: 30%; */
+    width: 100%;
+    /* height: 90px; */
 
 }
 
@@ -1602,6 +1533,7 @@ input:checked+.slider:before {
     margin-bottom: 25px;
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-evenly;
 }
 
 .card_info {
@@ -1826,7 +1758,8 @@ input:checked+.slider:before {
 }
 
 .sell_main_img {
-    width: 100%;
+    width: 95%;
+    height: 95%;
 }
 
 .order_sum_text {
@@ -1836,7 +1769,7 @@ input:checked+.slider:before {
 }
 
 .order_summary {
-    width: 20%;
+    width: 25%;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -2484,7 +2417,7 @@ input:checked+.slider:before {
 .manage_order_section {
     display: flex;
     gap: 40px;
-    width: 95%;
+    width: 100%;
     padding: 20px;
     flex-direction: column;
 }
@@ -2531,6 +2464,7 @@ input:checked+.slider:before {
     display: flex;
     gap: 5px;
     align-items: last baseline;
+    /* margin-top: 10px; */
 }
 
 .filterid {
@@ -2552,7 +2486,7 @@ input:checked+.slider:before {
 }
 
 .manage_filter_btn {
-    padding: 20px;
+    padding: 15px;
     row-gap: 13px;
     flex-wrap: wrap;
     border-radius: 10px;
@@ -2560,6 +2494,8 @@ input:checked+.slider:before {
     box-shadow: 2px 2px 4px 0px #212121 inset, -2px -2px 4px 0px #25251F inset, 10px 10px 20px 0px rgba(0, 0, 0, 0.25);
     border: none;
     outline: none;
+    color: white;
+    margin-bottom: 10px;
 }
 
 .manage_filter_table {
@@ -3352,8 +3288,8 @@ input:checked+.slider:before {
     text-align: left;
 }
 
-.logo2 img {
-    width: 200px;
+.setting_img{
+    width: 200px !important;
 }
 
 
@@ -3643,7 +3579,7 @@ input:checked+.slider:before {
 
 .add_venue {
     position: relative;
-    width: 40%;
+    width: 41%;
     margin: auto;
     margin-top: 30px;
     border-radius: 10px;
@@ -3674,6 +3610,7 @@ input:checked+.slider:before {
     margin: auto;
     margin-top: 20px;
     background: transparent;
+    color: white;
 }
 
 .add_venue form input {
@@ -3717,8 +3654,16 @@ input:checked+.slider:before {
 
 .panel5 {
     padding: 0 18px;
-    overflow: hidden;
     margin-top: 10px;
+    opacity: 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.3s ease-in-out;
+}
+.panel5.show {
+    opacity: 1;
+    max-height: 500px; /* Adjust based on your content size */
+    margin-top: 10px; /* Optional: to add some spacing when content appears */
 }
 
 .panel2 {
@@ -4071,15 +4016,18 @@ input:checked+.slider:before {
     cursor: pointer;
     border-radius: 25px;
     margin-top: 150px;
+    color: white;
 }
 
 .arc_btn {
     display: flex;
-    /* gap: 5px; */
+    gap: 5px;
+    margin-top: 10px;
     align-items: center;
     color: var(--color-yellow) !important;
     justify-content: left;
     width: 100%;
+    margin-bottom: 10px;
 }
 
 .arc_btn i {
@@ -4760,7 +4708,7 @@ input:checked+.slider:before {
 
 .home-section .home-content {
     /* height: 60px; */
-    padding: 30px;
+    padding: 20px;
     padding-top: 10px;
     display: flex;
     /* align-items: center; */
@@ -4799,18 +4747,18 @@ input:checked+.slider:before {
     display: flex;
     /* justify-content: center; */
     /* align-items: center; */
-    gap: 60px;
+    gap: 20px;
 
 }
 
 .dash_data {
-    width: 60%;
+    width: 65%;
     display: flex;
     flex-direction: column;
 }
 
 .dash_options {
-    width: 30%;
+    width: 35%;
     display: flex;
     flex-direction: column;
     /* align-items: flex-end; */
@@ -4919,8 +4867,11 @@ input:checked+.slider:before {
 }
 .Exinner_flex{
    margin-top: 3px !important;
-   gap: 75px !important;
+   /* gap: 65px !important; */
    cursor: pointer;
+   display: flex;
+   justify-content: space-between;
+   width: 100%;
 }
 
 .icon_sub_menu{
@@ -4949,6 +4900,7 @@ input:checked+.slider:before {
 .events_inputs{
    display: flex;
    gap: 25px;
+   flex-wrap: wrap;
 }
 .venu_btn{
    font-size: 25px !important;
@@ -4981,7 +4933,13 @@ input:checked+.slider:before {
 
 
 
-
+.ticket_right_ins{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
 
 
 
@@ -4998,6 +4956,44 @@ input:checked+.slider:before {
 
 /*Stying for small screens*/
 @media screen and (max-width: 860px) {
+    .box2{
+        margin-top: 40px;
+    }
+    .sell_formr textarea{
+        width: 180px;
+        padding: 10px;
+    }
+    .cnumber {
+        width: 200px !important;
+    }
+    .row_form input {
+        width: 200px;
+    }
+    .dash_btn_row2{
+        width: 100%;
+    }
+    .dash_text{
+        flex-wrap: wrap;
+        width: 100%;
+    }
+    .dash_btns{
+        align-items: center;
+        justify-content: center;
+    }
+    .right_info_ticket{
+        flex-direction: column-reverse;
+    }
+    .start_tax_inputs{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    .start_tax{
+        flex-direction: column;
+    }
+    .area_form_left{
+        width: 100%;
+    }
     .ticket_qr {
         width: 180px;
         height: 180px;
@@ -5067,27 +5063,27 @@ input:checked+.slider:before {
     }
 
     .sms {
-        width: 90%;
+        width: 100%;
     }
 
     .req_show {
-        width: 90%;
+        width: 100%;
     }
 
     .new_event_list {
-        width: 90%;
+        width: 100%;
     }
 
     .total {
-        width: 90%;
+        width: 100%;
     }
 
     .upcoming_events {
-        width: 90%;
+        width: 100%;
     }
 
     .para {
-        width: 80%;
+        width: 100%;
     }
 
     .manage_filter_table table tbody tr td {
@@ -5200,13 +5196,14 @@ input:checked+.slider:before {
     }
 
     .dash_data {
-        width: 90%;
+        width: 100%;
     }
 
     .dash_options {
-        width: 90%;
+        width: 100%;
 
     }
+
 
     .sms_btns {
         display: flex;
@@ -5264,7 +5261,7 @@ input:checked+.slider:before {
     } */
 
     .right_area_form {
-        width: 85%;
+        width: 100%;
         align-items: center;
 
     }
@@ -5272,6 +5269,11 @@ input:checked+.slider:before {
     .ticket_right {
         flex-wrap: wrap;
         align-items: center;
+        text-align: center;
+        gap: 20px;
+    }
+    .ticket_right_ins{
+        gap: 30px;
     }
 
     .single_event_age {
@@ -5280,6 +5282,7 @@ input:checked+.slider:before {
 
     .ticket_form_sec {
         overflow: scroll;
+        padding: 15px;
         max-width: 210px;
     }
 
@@ -5325,7 +5328,7 @@ input:checked+.slider:before {
     }
 
     .events_row_1 .new_event_list {
-        width: 85%;
+        width: 100%;
     }
 
 
@@ -5345,11 +5348,12 @@ input:checked+.slider:before {
     }
 
     .order_summary {
-        width: 80%;
+        width: 100%;
     }
 
     .popup {
         flex-direction: column;
+        width: 100%;
     }
 
     .info_form_section h2 {
@@ -5363,10 +5367,6 @@ input:checked+.slider:before {
 
     .billing_info input {
         width: 200px;
-    }
-
-    .sell_form_section {
-        padding: 15px;
     }
 
     .info_order_section {
@@ -5437,20 +5437,9 @@ input:checked+.slider:before {
 
 
 
-    .manage_order_form {
-        flex-direction: column;
-        /* font-size: 11px; */
-        align-items: flex-start;
-    }
-
+   
     .manage_filter_in {
         width: 200px;
-    }
-
-    .manage_filter_d {
-        flex-direction: column;
-        align-items: center;
-        /* gap: 50px     */
     }
 
     .order_t {
@@ -5646,7 +5635,7 @@ input:checked+.slider:before {
     }
 
     .mar_l {
-        margin: 0;
+        margin: 0 !important;
     }
 
     
@@ -5706,7 +5695,7 @@ input:checked+.slider:before {
 
     .event_from {
         flex-direction: column;
-        align-items: center;
+        /* align-items: center; */
         overflow-x: scroll;
         /* flex-wrap: wrap; */
         width: 100%;
@@ -6286,6 +6275,7 @@ input:checked+.slider:before {
     border: 1px solid var(--color-yellow);
     border-radius: 25px;
     margin-top: 40px;
+    color: white;
 }
 
 .yellow_tables td {
@@ -6301,6 +6291,7 @@ input:checked+.slider:before {
 .tiktct_mbtns button {
     padding: 10px 20px;
     background: #000;
+    color: white;
     border-radius: 25px;
     border: 1px solid var(--color-yellow);
 
@@ -6312,6 +6303,7 @@ input:checked+.slider:before {
     background: #000;
     border-radius: 25px;
     border: 1px solid var(--color-yellow);
+    color: white;
 
 }
 
@@ -6331,3 +6323,7 @@ input:checked+.slider:before {
     color: var(--color-yellow) !important;
     fill: var(--color-yellow) !important;
 }
+.hidden {
+    display: none;
+  }
+  

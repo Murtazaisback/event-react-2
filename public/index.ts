@@ -12,6 +12,11 @@ import Ellispse from './Ellipse.png'
 import Landingmain from './landingMain.png'
 import Ellis_3 from './Ellipse 3.png'
 import Publish_img from "./Designer - Section 1.png"
+import Dashboard_img from './Designer - 4th floor 1.png'
+import Settingdasg_img from './Rectangle 74.png'
+import Strip from './stripe 3.png'
+import Square from './Square_LogoLockup_White 1.png'
+import SellTick_img from './Designer - Section 1.png'
 
 export{
     Logo,
@@ -28,5 +33,10 @@ export{
     Landingmain,
     Ellis_3,
     Publish_img,
+    Dashboard_img,
+    Settingdasg_img,
+    Strip,
+    Square,
+    SellTick_img,
 
 }

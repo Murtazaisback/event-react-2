@@ -13,66 +13,65 @@ import { RiMoneyDollarCircleLine } from 'react-icons/ri'
 import { SlLocationPin } from 'react-icons/sl'
 
 const PublishEvent = () => {
-  return (
-    <div className='main_container'>
+    return (
+        <div className='main_container'>
             <div className="dashboard_main">
                 <div className="dashboard_section">
                     <div className="sidebar ">
-                        <div className="logo-details">
-                        </div>
+
                         <ul className="nav-links">
                             <Silder_icon />
                             <li>
-                                <a href="./newevent.html">
-                                    <IoSpeedometerOutline className=" menu_dash_i" />
+                                <Link href="/Dashboard">
 
+                                    <IoSpeedometerOutline className=" menu_dash_i" />
                                     <span className="link_name">Dashboard</span>
-                                </a>
+                                </Link>
                             </li>
                             <li>
                                 <div className="iocn-link">
-                                    <a href="./newevent.html">
+                                    <Link href="/NewEvent">
                                         <CiCirclePlus className="yellow_m menu_dash_i" />
 
                                         <span className="link_name yellow_m">CREATE AN EVENT</span>
-                                    </a>
+                                    </Link>
                                 </div>
                             </li>
                             <li>
                                 <SubMenus />
                             </li>
                             <li>
-                                <a href="./venues.html">
+                                <Link href="/venues">
                                     <SlLocationPin className=" menu_dash_i" />
                                     <span className="link_name">VENUES</span>
-                                </a>
+                                </Link>
                             </li>
                             <li>
-                                <a href="./reports.html">
+                                <Link href="/reports">
                                     <RiMoneyDollarCircleLine className=" menu_dash_i" />
                                     <span className="link_name">REPORTS</span>
-                                </a>
+                                </Link>
                             </li>
                             <li>
-                                <a href="./settingdash.html">
+                                <Link href="/settingdash">
                                     <FaGear className=" menu_dash_i" />
                                     <span className="link_name">SETTINGS</span>
-                                </a>
+                                </Link>
                             </li>
                             <li>
                                 <div className="iocn-link">
-                                    <a href="#">
+                                    <Link href="#">
                                         <FaRegMessage className=" menu_dash_i" />
                                         <span className="link_name">SMS CAMPAIGNS</span>
-                                    </a>
+                                    </Link>
                                 </div>
                             </li>
                             <li>
                                 <div className="iocn-link">
-                                    <a href="./myaccount.html">
+                                    <Link href="/myaccount">
                                         <FaRegUser className=" menu_dash_i" />
                                         <span className="link_name">MY ACCOUNT</span>
-                                    </a>
+                                    </Link>
                                 </div>
                             </li>
                         </ul>
@@ -91,7 +90,7 @@ const PublishEvent = () => {
                                     </Link>
                                     <Link className="   tab_btn  team-member team-member-small"
                                         href="/PublishEvent">3. Publish Event
-                                        <Image src={Ellis_3} alt=''className="team-member-info one_active"  />
+                                        <Image src={Ellis_3} alt='' className="team-member-info one_active" />
 
                                     </Link>
                                     <Link className="   tab_btn  team-member team-member-small"
@@ -99,17 +98,17 @@ const PublishEvent = () => {
                                     </Link>
                                 </div>
                                 <div id="Publish" className="w3-container w3-border city">
-                                <div className="publish_section">
+                                    <div className="publish_section">
 
 
-                                    <Image src={Publish_img} alt=""/>
+                                        <Image src={Publish_img} alt="" />
 
-                                    <div className="publish_btns">
-                                        <a className="save_btn">Save Draft</a>
-                                        <a className="w3-bar-item w3-button tablink tab_btn publish_btn" href="./share Event.html">Publish</a>
+                                        <div className="publish_btns">
+                                            <a className="save_btn">Save Draft</a>
+                                            <a className="w3-bar-item w3-button tablink tab_btn publish_btn" href="./share Event.html">Publish</a>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
 
 
 
@@ -123,7 +122,7 @@ const PublishEvent = () => {
                 </div>
             </div>
         </div>
-  )
+    )
 }
 
 export default PublishEvent

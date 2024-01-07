@@ -23,61 +23,59 @@ const NewEvent = () => {
             <div className="dashboard_main">
                 <div className="dashboard_section">
                     <div className="sidebar ">
-                        <div className="logo-details">
-                        </div>
                         <ul className="nav-links">
                             <Silder_icon />
                             <li>
-                                <a href="./newevent.html">
-                                    <IoSpeedometerOutline className=" menu_dash_i" />
+                                <Link href="/Dashboard">
 
+                                    <IoSpeedometerOutline className=" menu_dash_i" />
                                     <span className="link_name">Dashboard</span>
-                                </a>
+                                </Link>
                             </li>
                             <li>
                                 <div className="iocn-link">
-                                    <a href="./newevent.html">
+                                    <Link href="/NewEvent">
                                         <CiCirclePlus className="yellow_m menu_dash_i" />
 
                                         <span className="link_name yellow_m">CREATE AN EVENT</span>
-                                    </a>
+                                    </Link>
                                 </div>
                             </li>
                             <li>
                                 <SubMenus />
                             </li>
                             <li>
-                                <a href="./venues.html">
+                                <Link href="/venues">
                                     <SlLocationPin className=" menu_dash_i" />
                                     <span className="link_name">VENUES</span>
-                                </a>
+                                </Link>
                             </li>
                             <li>
-                                <a href="./reports.html">
+                                <Link href="/reports">
                                     <RiMoneyDollarCircleLine className=" menu_dash_i" />
                                     <span className="link_name">REPORTS</span>
-                                </a>
+                                </Link>
                             </li>
                             <li>
-                                <a href="./settingdash.html">
+                                <Link href="/settingdash">
                                     <FaGear className=" menu_dash_i" />
                                     <span className="link_name">SETTINGS</span>
-                                </a>
+                                </Link>
                             </li>
                             <li>
                                 <div className="iocn-link">
-                                    <a href="#">
+                                    <Link href="#">
                                         <FaRegMessage className=" menu_dash_i" />
                                         <span className="link_name">SMS CAMPAIGNS</span>
-                                    </a>
+                                    </Link>
                                 </div>
                             </li>
                             <li>
                                 <div className="iocn-link">
-                                    <a href="./myaccount.html">
+                                    <Link href="/myaccount">
                                         <FaRegUser className=" menu_dash_i" />
                                         <span className="link_name">MY ACCOUNT</span>
-                                    </a>
+                                    </Link>
                                 </div>
                             </li>
                         </ul>
@@ -89,10 +87,10 @@ const NewEvent = () => {
 
 
                             <div className="tabs_container">
-                            <div className="w3-bar w3-black tabs_section">
+                                <div className="w3-bar w3-black tabs_section">
                                     <Link className="   w3-red tab_btn  team-member" href="/NewEvent">
-                                        
-                                        <Image src={Ellis_3} alt=''className="team-member-info one_active"  />
+
+                                        <Image src={Ellis_3} alt='' className="team-member-info one_active" />
                                         1. Enter Event Details</Link>
                                     <Link className="   tab_btn  team-member"
                                         href='/DefineTicket'>2. Define Ticket Prices
@@ -105,7 +103,7 @@ const NewEvent = () => {
                                         href="/ShareEvent">4. share Event
                                     </Link>
                                 </div>
-                                <EventRegister/>
+                                <EventRegister label='Next' href='DefineTicket'/>
 
 
 

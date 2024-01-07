@@ -15,66 +15,65 @@ import { MdExitToApp } from "react-icons/md";
 import "./index.css"
 
 const ShareEvent = () => {
-  return (
-    <div className='main_container'>
+    return (
+        <div className='main_container'>
             <div className="dashboard_main">
                 <div className="dashboard_section">
                     <div className="sidebar ">
-                        <div className="logo-details">
-                        </div>
+
                         <ul className="nav-links">
                             <Silder_icon />
                             <li>
-                                <a href="./newevent.html">
-                                    <IoSpeedometerOutline className=" menu_dash_i" />
+                                <Link href="/Dashboard">
 
+                                    <IoSpeedometerOutline className=" menu_dash_i" />
                                     <span className="link_name">Dashboard</span>
-                                </a>
+                                </Link>
                             </li>
                             <li>
                                 <div className="iocn-link">
-                                    <a href="./newevent.html">
+                                    <Link href="/NewEvent">
                                         <CiCirclePlus className="yellow_m menu_dash_i" />
 
                                         <span className="link_name yellow_m">CREATE AN EVENT</span>
-                                    </a>
+                                    </Link>
                                 </div>
                             </li>
                             <li>
                                 <SubMenus />
                             </li>
                             <li>
-                                <a href="./venues.html">
+                                <Link href="/venues">
                                     <SlLocationPin className=" menu_dash_i" />
                                     <span className="link_name">VENUES</span>
-                                </a>
+                                </Link>
                             </li>
                             <li>
-                                <a href="./reports.html">
+                                <Link href="/reports">
                                     <RiMoneyDollarCircleLine className=" menu_dash_i" />
                                     <span className="link_name">REPORTS</span>
-                                </a>
+                                </Link>
                             </li>
                             <li>
-                                <a href="./settingdash.html">
+                                <Link href="/settingdash">
                                     <FaGear className=" menu_dash_i" />
                                     <span className="link_name">SETTINGS</span>
-                                </a>
+                                </Link>
                             </li>
                             <li>
                                 <div className="iocn-link">
-                                    <a href="#">
+                                    <Link href="#">
                                         <FaRegMessage className=" menu_dash_i" />
                                         <span className="link_name">SMS CAMPAIGNS</span>
-                                    </a>
+                                    </Link>
                                 </div>
                             </li>
                             <li>
                                 <div className="iocn-link">
-                                    <a href="./myaccount.html">
+                                    <Link href="/myaccount">
                                         <FaRegUser className=" menu_dash_i" />
                                         <span className="link_name">MY ACCOUNT</span>
-                                    </a>
+                                    </Link>
                                 </div>
                             </li>
                         </ul>
@@ -97,46 +96,46 @@ const ShareEvent = () => {
                                     </Link>
                                     <Link className="   tab_btn  team-member team-member-small"
                                         href="/ShareEvent">4. share Event
-                                        <Image src={Ellis_3} alt=''className="team-member-info one_active"  />
+                                        <Image src={Ellis_3} alt='' className="team-member-info one_active" />
                                     </Link>
                                 </div>
                                 <div id="share" className="w3-container w3-border city" >
-                                <div className="share_event">
-                                    <p className="share_event_title">Your event has been published successfully</p>
-                                    <div className="share_portion">
+                                    <div className="share_event">
+                                        <p className="share_event_title">Your event has been published successfully</p>
+                                        <div className="share_portion">
 
 
-                                        <div className="exit_event">
-                                            <p>You can view your event here</p>
-                                            {/* <img src="../imgs/enter 1.png" alt=""/> */}
-                                            <MdExitToApp  className="share_link_i"/>
+                                            <div className="exit_event">
+                                                <p>You can view your event here</p>
+                                                {/* <img src="../imgs/enter 1.png" alt=""/> */}
+                                                <MdExitToApp className="share_link_i" />
 
-                                        </div>
-                                        <h3>Share Options</h3>
-                                        <div className="share_link">
-                                            <p>Shareable Link:</p>
-                                            <input type="text" disabled/>
-                                            {/* <img src="../imgs/copy 1.png" alt=""/>/ */}
-                                            <IoCopyOutline  className="share_link_i"/>
+                                            </div>
+                                            <h3>Share Options</h3>
+                                            <div className="share_link">
+                                                <p>Shareable Link:</p>
+                                                <input type="text" disabled />
+                                                {/* <img src="../imgs/copy 1.png" alt=""/>/ */}
+                                                <IoCopyOutline className="share_link_i" />
 
-                                        </div>
-                                        <div className="directly">
-                                            <p>Share Directly:</p>
-                                            <div className="share_icon">
-                                                <FaFacebookF  className="share_icon_i"/>
-                                                <FaLinkedin className="share_icon_i"/>
-                                                <FaTwitter className="share_icon_i"/>
+                                            </div>
+                                            <div className="directly">
+                                                <p>Share Directly:</p>
+                                                <div className="share_icon">
+                                                    <FaFacebookF className="share_icon_i" />
+                                                    <FaLinkedin className="share_icon_i" />
+                                                    <FaTwitter className="share_icon_i" />
+                                                </div>
                                             </div>
                                         </div>
+
                                     </div>
+                                    <div className="share_btns">
+                                        <a className="w3-bar-item w3-button tablink w3-red tab_btn new_envet_btn" href="../newevent.html">Create a New Event</a>
+                                        <a href="../event.html" className="publish_btn">Done</a>
 
+                                    </div>
                                 </div>
-                                <div className="share_btns">
-                                    <a className="w3-bar-item w3-button tablink w3-red tab_btn new_envet_btn" href="../newevent.html">Create a New Event</a>
-                                    <a href="../event.html" className="publish_btn">Done</a>
-
-                                </div>
-                            </div>
 
 
 
@@ -150,7 +149,7 @@ const ShareEvent = () => {
                 </div>
             </div>
         </div>
-  )
+    )
 }
 
 export default ShareEvent

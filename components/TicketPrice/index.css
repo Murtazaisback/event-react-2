@@ -2,17 +2,12 @@
     font-size: 24px !important;
 }
 
-.ticket_form_sec {
-    padding: 5px;
-}
 
 .second_sec {
     padding-top: 0 !important;
 }
 
-.ticket_form_sec {
-    padding: 5px;
-}
+
 
 .second_sec {
     padding-top: 0 !important;
@@ -247,10 +242,8 @@
     cursor: pointer;
 
 }
-.ticket_right_ins{
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    justify-content: center;
-    align-items: center;
+
+.Archived_heading{
+    margin-bottom: 20px;
+    margin-top: 10px;
 }
