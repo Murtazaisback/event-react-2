@@ -107,16 +107,16 @@ const EventDash = () => {
                                         <h2>What do you want to do?</h2>
                                         <div className="dash_btns">
                                             <div className="dash_btn_row aL">
-                                                <Link href="./sell_tickets.html">Sell Tickets</Link>
-                                                <Link href="./managetwo.html">Hold Seats</Link>
-                                                <Link href="./scan_tickets.html">Scan Tickets</Link>
+                                                <Link href="/sellTickets">Sell Tickets</Link>
+                                                <Link href="/managetwo">Hold Seats</Link>
+                                                <Link href="/scanTickets">Scan Tickets</Link>
                                                 <Link href="/ManageOrder">Manage Orders</Link>
                                             </div>
                                             <div className="dash_btn_row">
-                                                <Link href="./attendees.html">Attendees</Link>
-                                                <Link href="./eventdetails.html">Edit Event Details</Link>
-                                                <Link href="./ticketprices.html">Manage Ticket Prices</Link>
-                                                <Link href="./setting_chart.html">Edit Seating</Link>
+                                                <Link href="/attendees">Attendees</Link>
+                                                <Link href="/eventdetails">Edit Event Details</Link>
+                                                <Link href="/ticketprices">Manage Ticket Prices</Link>
+                                                <Link href="/settingChart">Edit Seating</Link>
                                             </div>
                                         </div>
                                     </div>

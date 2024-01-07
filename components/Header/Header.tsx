@@ -31,7 +31,7 @@ const Header = () => {
                 <ul className="navs-links" >
                     <li><Link href="/">Home</Link></li>
                     <li><Link href="/Pricing">Pricing</Link></li>
-                    <li><Link href="/Events">EVENTS</Link></li>
+                    <li><Link href="/EventsPage">EVENTS</Link></li>
                     <li><Link className="login-button pc_none" href="/Login">Login</Link></li>
                     <li><Link href="/NewEvent" className="li_active">CREATE EVENT</Link></li>
                 </ul>
