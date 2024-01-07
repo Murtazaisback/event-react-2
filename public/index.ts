@@ -17,6 +17,8 @@ import Settingdasg_img from './Rectangle 74.png'
 import Strip from './stripe 3.png'
 import Square from './Square_LogoLockup_White 1.png'
 import SellTick_img from './Designer - Section 1.png'
+import TicketPF_Img from './EV logo no background 1.png'
+
 
 export{
     Logo,
@@ -38,5 +40,5 @@ export{
     Strip,
     Square,
     SellTick_img,
-
+    TicketPF_Img,
 }
