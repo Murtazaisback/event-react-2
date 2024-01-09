@@ -16,28 +16,29 @@ const Header = () => {
         setIsOpen(!isOpen);
     };
 
+    const closeMenu = () => {
+        setIsOpen(false);
+    };
+
     return (
         <nav>
             <Link href="/">
                 <Image src={Logo} alt='logo' className='logo_nav' />
             </Link>
 
-
             <button onClick={toggleMenu} className="menu-btn">
                 {isOpen ? <BsX className="icon_i" /> : <BsList className="icon_i" />}
             </button>
             <div className={`menu ${isOpen ? 'open' : ''}`}>
-
-                <ul className="navs-links" >
-                    <li><Link href="/">Home</Link></li>
-                    <li><Link href="/Pricing">Pricing</Link></li>
-                    <li><Link href="/EventsPage">EVENTS</Link></li>
-                    <li><Link className="login-button pc_none" href="/Login">Login</Link></li>
-                    <li><Link href="/NewEvent" className="li_active">CREATE EVENT</Link></li>
+                <ul className="navs-links">
+                    <li><Link href="/" onClick={closeMenu}>Home</Link></li>
+                    <li><Link href="/Pricing" onClick={closeMenu}>Pricing</Link></li>
+                    <li><Link href="/EventsPage" onClick={closeMenu}>EVENTS</Link></li>
+                    <li><Link className="login-button pc_none" href="/Login" onClick={closeMenu}>Login</Link></li>
+                    <li><Link href="/NewEvent" className="li_active" onClick={closeMenu}>CREATE EVENT</Link></li>
                 </ul>
             </div>
-            <Link href="/Login" className="login-button yellow_cr res_none">Login</Link>
-
+            <Link href="/Login" className="login-button yellow_cr res_none" onClick={closeMenu}>Login</Link>
         </nav>
     )
 }

@@ -1,4 +1,5 @@
 'use client'
+import ArchivedBack from '@/components/ArchivedBack/ArchivedBack';
 import EventRegister from '@/components/EventRegister/EventRegister';
 import MainMenusEx from '@/components/MainMenusEx/MainMenusEx';
 import { Silder_icon } from '@/components/SubMenus/SubMenus';
@@ -11,8 +12,8 @@ import { FaChevronLeft } from 'react-icons/fa6';
 import { IoSpeedometerOutline } from 'react-icons/io5';
 
 const Eventdetails = () => {
-    const [isMainOpen, setIsMainOpen] = useState(false);
-    const [isEventOpen, setIsEventOpen] = useState(false);
+    const [isMainOpen, setIsMainOpen] = useState(true);
+    const [isEventOpen, setIsEventOpen] = useState(true);
 
     const toggleMain = () => {
         setIsMainOpen(!isMainOpen);
@@ -101,13 +102,7 @@ const Eventdetails = () => {
                     <section className="home-section">
                         <div className="home-content">
                         <div className="tabs_container">
-                        <Link className="arc_btn" href="/archived">
-                                    {/* <i className='bx bx-chevron-left'></i> */}
-                                    <FaChevronLeft style={{ color: "#FFE100", marginRight: "10px" }} />
-
-                                    <p>Back</p>
-                                </Link>
-                                <EventRegister title="Archived: Event Title: Event Details" label='Save Changes' href='#'/>
+                                <EventRegister title=" Event Title: Event Details" label='Save Changes' href='#'/>
                         </div>
                         </div>
                     </section>

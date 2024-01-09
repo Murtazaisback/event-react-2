@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import React, { useState } from 'react'
 import { FaAngleDoubleDown, FaAngleDoubleUp } from 'react-icons/fa';
 
@@ -31,11 +32,11 @@ const ArchivedCom = () => {
             <div className={`panel5 ${isPanelVisible ? 'show' : ''}`}>
 
                 <div className="ct_inner_btn">
-                    <a href="./archived_de.html">Event Details</a>
-                    <a href="./attendees.html">Attendees</a>
-                    <a href="/ManageOrder">Orders</a>
-                    <a href="./ticketprices.html">Ticket Prices</a>
-                    <a href="./setting_chart.html">Seating Chart</a>
+                    <Link href="/ArchivedEvent">Event Details</Link>
+                    <Link href="/ArchivedAttendess">Attendees</Link>
+                    <Link href="/ArchivedOrder">Orders</Link>
+                    <Link href="/ArchivedPrice">Ticket Prices</Link>
+                    <Link href="/ArchivedChart">Seating Chart</Link>
                 </div>
             </div>
         </div>

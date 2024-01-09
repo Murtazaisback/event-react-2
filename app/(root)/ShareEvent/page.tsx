@@ -62,7 +62,7 @@ const ShareEvent = () => {
                             </li>
                             <li>
                                 <div className="iocn-link">
-                                    <Link href="#">
+                                    <Link href="/SmsCampaigns">
                                         <FaRegMessage className=" menu_dash_i" />
                                         <span className="link_name">SMS CAMPAIGNS</span>
                                     </Link>
@@ -131,8 +131,8 @@ const ShareEvent = () => {
 
                                     </div>
                                     <div className="share_btns">
-                                        <a className="w3-bar-item w3-button tablink w3-red tab_btn new_envet_btn" href="../newevent.html">Create a New Event</a>
-                                        <a href="../event.html" className="publish_btn">Done</a>
+                                        <a className="w3-bar-item w3-button tablink w3-red tab_btn new_envet_btn" href="/NewEvent">Create a New Event</a>
+                                        <a href="/Event" className="publish_btn">Done</a>
 
                                     </div>
                                 </div>

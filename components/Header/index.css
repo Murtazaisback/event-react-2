@@ -71,12 +71,12 @@ nav{
       display: block;
       position: absolute;
       top: 60px;
-      right: 20px;
+      right: 0px;
       background-color: #131418; /* Set your desired background color */
       border-radius: 5px;
       overflow: hidden;
-      transition: max-height 0.5s ease, opacity 0.5s ease;
-      max-height: 0;
+      transition: all 0.5s ease, opacity 0.5s ease;
+      height: 0;
       opacity: 0;
       visibility: hidden;
       }
@@ -119,9 +119,11 @@ nav{
   
     
     .menu.open {
-      max-height: 300px; /* Adjust as needed */
+      height: 350px; 
+      /* height: 100%; */
       opacity: 1;
       visibility: visible;
+      width: 100%;
       
     }
     

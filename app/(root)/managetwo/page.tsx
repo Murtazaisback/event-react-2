@@ -1,4 +1,5 @@
 'use client'
+import ArchivedBack from '@/components/ArchivedBack/ArchivedBack'
 import MainMenusEx from '@/components/MainMenusEx/MainMenusEx'
 import { Silder_icon } from '@/components/SubMenus/SubMenus'
 import Link from 'next/link'
@@ -9,8 +10,8 @@ import { FaChevronLeft } from 'react-icons/fa6'
 import { IoSpeedometerOutline } from 'react-icons/io5'
 
 const Hold_Seats = () => {
-    const [isMainOpen, setIsMainOpen] = useState(false);
-    const [isEventOpen, setIsEventOpen] = useState(false);
+    const [isMainOpen, setIsMainOpen] = useState(true);
+    const [isEventOpen, setIsEventOpen] = useState(true);
 
     const toggleMain = () => {
         setIsMainOpen(!isMainOpen);
@@ -99,15 +100,9 @@ const Hold_Seats = () => {
                     <section className="home-section">
                         <div className="home-content">
                         <div className="manage_order_area">
-                        <Link className="arc_btn" href="/archived">
-                                    {/* <i className='bx bx-chevron-left'></i> */}
-                                    <FaChevronLeft style={{ color: "#FFE100", marginRight: "10px" }} />
-
-                                    <p>Back</p>
-                                </Link>
                             <div className="manage_two_sec">
                                 <div className="manage_two_info">
-                                    <h1> Archived: Event Title: Hold Seats</h1>
+                                    <h1> Event Title: Hold Seats</h1>
                                     <p>Select seats you’d like to mark on hold. This will prevent both you, your staff, and your customers from purchasing these seats.</p>
                                 </div>
                                 <div className="manage_iframe">

@@ -10,7 +10,7 @@ import { IoSpeedometerOutline } from 'react-icons/io5'
 import './index.css'
 
 const Archived = () => {
-    const [isMainOpen, setIsMainOpen] = useState(false);
+    const [isMainOpen, setIsMainOpen] = useState(true);
     const [isEventOpen, setIsEventOpen] = useState(false);
 
     const toggleMain = () => {

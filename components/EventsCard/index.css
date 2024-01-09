@@ -1,16 +1,8 @@
-.card_info {
+.event_card{
     border-radius: 10px;
-    background: radial-gradient(79.36% 84.72% at -61.47% 22.46%, rgba(99, 99, 99, 0.80) 0%, rgba(99, 99, 99, 0.00) 100%), radial-gradient(209.84% 203.35% at 275.29% 88.29%, rgba(250, 225, 0, 0.90) 0%, rgba(0, 0, 0, 0.00) 100%), rgba(0, 0, 0, 0.10);
-    padding-bottom: 30px;
-    padding-left: 20px;
-}
+    transition: all ease-in-out 0.35s;
 
-.card_info p {
-    padding-bottom: 5px;
-    margin-bottom: 10px;
-    font-size: 15px;
 }
-.event_card_img{
-    width: 270px;
-    height: 270px;
+.event_card:hover{
+    transform: translateY(-10px);
 }

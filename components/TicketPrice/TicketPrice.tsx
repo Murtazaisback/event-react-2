@@ -4,8 +4,17 @@ import { FaXmark } from 'react-icons/fa6'
 import "./index.css"
 import { CiCirclePlus } from 'react-icons/ci'
 import Link from 'next/link'
+import ArchivedBack from '../ArchivedBack/ArchivedBack'
 
-const TicketPrice = ({ title = '',  label = '', href = '' })  => {
+interface CustomComponentProps {
+    title?: string;
+    showBackButton?: boolean;
+    href?: string;
+    label?: string;
+}
+
+
+const TicketPrice: React.FC<CustomComponentProps> = ({title = '',  label = '', href = '', showBackButton  })  => {
     const [dsVisible, setDsVisible] = useState(true);
     const [formSecVisible, setFormSecVisible] = useState(false);
     const [iconDirection, setIconDirection] = useState('down'); // 'down' or 'up'
@@ -36,10 +45,17 @@ const TicketPrice = ({ title = '',  label = '', href = '' })  => {
       setEndImmediately(!endImmediately);
       setStartImmediately(false); // Deactivate the other button
     };
+    const [showForm, setShowForm] = useState(false);
+
+  const handleCheckboxChange3 = (e: { target: { checked: boolean | ((prevState: boolean) => boolean) } }) => {
+    setShowForm(e.target.checked);
+  };
 
 
     return (
-        <div id="Prices" className="w3-container w3-border city" >
+        <div>
+            {showBackButton && <ArchivedBack />}
+        <div id="Prices" className="w3-container w3-border city">
             {title && <h2 className='Archived_heading'>{title}</h2>}
             <form action="Create_event" className="event_froml">
 
@@ -173,7 +189,7 @@ const TicketPrice = ({ title = '',  label = '', href = '' })  => {
 
                         </div>
                         {showTaxInputs && (
-                            <div className="tax_inputs" >
+                            <div className="tax_inputs">
                                 <div className="per_tax">
                                     <input type="number" min="0" />
                                     <span>%</span>
@@ -184,7 +200,7 @@ const TicketPrice = ({ title = '',  label = '', href = '' })  => {
                         )}
                         <div className="tax_inss">
                             <div className="start_tax">
-                                <div className="start_tax_sec" >
+                                <div className="start_tax_sec">
 
                                     <p>When Should Ticket Sales Start?</p>
                                     <div className="start_tax_inputs">
@@ -243,29 +259,31 @@ const TicketPrice = ({ title = '',  label = '', href = '' })  => {
                         <p>Have Tables Bookable as a Whole?</p>
                         <div className="right_info_ticket">
                             <label className="switch">
-                                <input type="checkbox" />
+                                <input type="checkbox" onChange={handleCheckboxChange3} />
                                 <span className="slider round"></span>
                             </label>
                             <p>Generate ticket types for tables bookable as a whole</p>
 
                         </div>
-                        <form action="" className="ticket_right_ins">
-                            <div className="ticket_right_cat">
-                                <label htmlFor="">Category</label>
-                                <input type="text" />
-                            </div>
+                        {showForm && (
+                            <form action="" className="ticket_right_ins">
+                                <div className="ticket_right_cat">
+                                    <label htmlFor="">Category</label>
+                                    <input type="text" />
+                                </div>
 
-                            <div className="ticket_right_cat">
-                                <label htmlFor="">Table of</label>
-                                <input type="text" />
-                            </div>
-                            <div>
+                                <div className="ticket_right_cat">
+                                    <label htmlFor="">Table of</label>
+                                    <input type="text" />
+                                </div>
+                                <div>
 
-                            <button type="submit" className="right_btn">Generate</button>
-                            </div>
-                        </form>
+                                    <button type="submit" className="right_btn">Generate</button>
+                                </div>
+                            </form>
+                        )}
                     </div>
-                    <div className="next_btn">
+                    <div className="next_btn2">
 
                         <Link className="w3-bar-item w3-button tablink tab_btn " href={href}>{label}</Link>
                     </div>
@@ -274,7 +292,7 @@ const TicketPrice = ({ title = '',  label = '', href = '' })  => {
 
 
             </form>
-        </div>
+        </div></div>
     )
 }
 

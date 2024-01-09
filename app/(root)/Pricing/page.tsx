@@ -37,8 +37,8 @@ const Pricing = () => {
                             <thead>
                             <tr>
                                 <th>Event Type</th>
-                                <th>Payment Processing Fee</th>
                                 <th>Platform Fee</th>
+                                <th>Payment Processing Fee</th>
                             </tr>
                             </thead>
                             <tbody>

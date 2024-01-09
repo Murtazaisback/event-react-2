@@ -75,6 +75,7 @@ main{
     color: #FFF;
     font-size: 84px;
     font-style: normal;
+    font-family: 'Inter';
     font-weight: 400;
     line-height: normal;
 }
@@ -193,7 +194,6 @@ main{
     font-size: 13px;
     background: radial-gradient(362.04% 223.32% at 0% -37.29%, rgba(38, 38, 38, 0.80) 0%, rgba(0, 0, 0, 0.00) 100%), radial-gradient(126.7% 188.08% at 100% 100%, rgba(36, 36, 36, 0.10) 0%, rgba(103, 93, 0, 0.01) 56.25%), rgba(0, 0, 0, 0.10);
     box-shadow: 2px 2px 4px 0px #212121 inset, -2px -2px 4px 0px #25251F inset, 10px 10px 20px 0px rgba(0, 0, 0, 0.25);
-    /* justify-content: space-between !important   ; */
     margin-top: 20px;
     transition: all ease-in-out 0.25s;
 }

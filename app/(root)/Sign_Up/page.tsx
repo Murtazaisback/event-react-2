@@ -23,7 +23,7 @@ const Sign_Up = () => {
                                     <label htmlFor="">Password:</label>
                                     <input type="Password" required/>
 
-                                    <label htmlFor="">confirm Password:</label>
+                                    <label htmlFor="">Confirm Password:</label>
                                     <input type="Password" required/>
                                 <button type="submit" className='form_btn'>Sign Up</button>
 

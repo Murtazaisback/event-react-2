@@ -10,8 +10,8 @@ import { FaRegCalendarAlt, FaChevronDown } from 'react-icons/fa';
 import { IoSpeedometerOutline } from 'react-icons/io5';
 
 const Draft = () => {
-    const [isMainOpen, setIsMainOpen] = useState(false);
-    const [isEventOpen, setIsEventOpen] = useState(false);
+    const [isMainOpen, setIsMainOpen] = useState(true);
+    const [isEventOpen, setIsEventOpen] = useState(true);
 
     const toggleMain = () => {
         setIsMainOpen(!isMainOpen);

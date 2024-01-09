@@ -1,4 +1,6 @@
 'use client'
+import ArchivedBack from '@/components/ArchivedBack/ArchivedBack'
+import AttendeesCom from '@/components/AttendeesCom/AttendeesCom'
 import MainMenusEx from '@/components/MainMenusEx/MainMenusEx'
 import { Silder_icon } from '@/components/SubMenus/SubMenus'
 import Link from 'next/link'
@@ -9,16 +11,16 @@ import { FaChevronLeft } from 'react-icons/fa6'
 import { IoSpeedometerOutline } from 'react-icons/io5'
 
 const Attendees = () => {
-    const [isMainOpen, setIsMainOpen] = useState(false);
-  const [isEventOpen, setIsEventOpen] = useState(false);
+    const [isMainOpen, setIsMainOpen] = useState(true);
+    const [isEventOpen, setIsEventOpen] = useState(true);
 
-  const toggleMain = () => {
-      setIsMainOpen(!isMainOpen);
-  };
+    const toggleMain = () => {
+        setIsMainOpen(!isMainOpen);
+    };
 
-  const toggleEvent = () => {
-      setIsEventOpen(!isEventOpen);
-  };
+    const toggleEvent = () => {
+        setIsEventOpen(!isEventOpen);
+    };
     return (
         <div className='main_container'>
             <div className="dashboard_main">
@@ -98,80 +100,7 @@ const Attendees = () => {
                     </div>
                     <section className="home-section">
                         <div className="home-content">
-                        <div className="manage_order_area">
-                        <Link className="arc_btn" href="/archived">
-                                    {/* <i className='bx bx-chevron-left'></i> */}
-                                    <FaChevronLeft style={{ color: "#FFE100", marginRight: "10px" }} />
-
-                                    <p>Back</p>
-                                </Link>
-
-                            <div className="manage_order_section">
-                                <h1>Archived: Event Title: Attendees</h1>
-                                <form action="" className="manage_order_form">
-
-                                    <div className="manage_filter_row">
-                                        <div className="manage_filter_in">
-                                            <input type="search" placeholder="Search by name, order #, or amount..."/>
-                                            <FaSearch style={{color: '#000'}} />
-                                        </div>
-                                    </div>
-                                    <button className="manage_filter_btn">Export CSV</button>
-
-                                </form>
-
-                            </div>
-                            <div className="manage_filter_table">
-                                <table className="manage_filter_tables">
-                                    <thead>
-                                        <tr>
-                                            <th>Mark Admitted</th>
-                                            <th>Name</th>
-                                            <th>Section</th>
-                                            <th>Seat ID</th>
-                                            <th>Table ID</th>
-                                            <th>Order #</th>
-                                            <th>Order Note</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td><FaCheck style={{color: "green"}} /></td>
-                                            <td>Johnny Cash</td>
-                                            <td>A</td>
-                                            <td>39</td>
-                                            <td>6</td>
-                                            <td>A-00011123323</td>
-                                            <td></td>
-
-
-                                        </tr>
-                                        <tr>
-                                            <td><FaCheck style={{color: "green"}} /></td>
-                                            <td>Johnny Cash</td>
-                                            <td>A</td>
-                                            <td>39</td>
-                                            <td>6</td>
-                                            <td>A-00011123323</td>
-                                            <td></td>
-
-
-                                        </tr>
-                                        <tr>
-                                            <td><FaCheck style={{color: "green"}} /></td>
-                                            <td>Johnny Cash</td>
-                                            <td>A</td>
-                                            <td>39</td>
-                                            <td>6</td>
-                                            <td>A-00011123323</td>
-                                            <td></td>
-
-
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </div>
-                        </div>
+                            <AttendeesCom title=' Event Title: Attendees'/>
 
 
 

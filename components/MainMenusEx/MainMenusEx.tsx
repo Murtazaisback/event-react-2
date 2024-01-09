@@ -23,7 +23,7 @@ const MainMenusEx = () => {
                 </Link>
             </li><li>
                 <div className="iocn-link">
-                    <Link href="#">
+                    <Link href="/SmsCampaigns">
                         <FaRegMessage className=" menu_dash_i" />
                         <span className="link_name">SMS CAMPAIGNS</span>
                     </Link>

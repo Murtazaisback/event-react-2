@@ -1,6 +1,8 @@
 import { Rectangle } from '@/public'
 import Image from 'next/image'
+import Link from 'next/link'
 import React from 'react'
+import "./index.css"
 
 const EventsCard = () => {
     return (
@@ -10,7 +12,7 @@ const EventsCard = () => {
                 <p>Event Title</p>
                 <p>Sat, July 15, 2025 • 7:30 PM</p>
                 <p>Venue Name</p>
-                <a href="./singleevent.html" className="btn sm">Get tickets</a>
+                <Link href="/SingleEvent" className="btn sm">Get tickets</Link>
             </div>
         </div>
     )

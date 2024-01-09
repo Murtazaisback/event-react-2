@@ -22,7 +22,7 @@ const Sign_Up_org = () => {
                                     <input type="text"/>
                                     <label htmlFor="">Business Name:</label>
                                     <input type="text"/>
-                                    <label htmlFor="">role:</label>
+                                    <label htmlFor="">Role:</label>
                                     <div className="sign_up_btns">
                                         <button>Organizer</button>
                                         <button>Venue</button>
@@ -36,7 +36,7 @@ const Sign_Up_org = () => {
                                     <label htmlFor="">Password</label>
                                     <input type="Password" required/>
 
-                                    <label htmlFor="">confirm Password</label>
+                                    <label htmlFor="">Confirm Password</label>
                                     <input type="Password" required/>
                                 <button type="submit">Sign Up</button>
 

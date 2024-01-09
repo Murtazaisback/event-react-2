@@ -1,4 +1,5 @@
 'use client'
+import ArchivedBack from '@/components/ArchivedBack/ArchivedBack';
 import EventRegister from '@/components/EventRegister/EventRegister';
 import MainMenusEx from '@/components/MainMenusEx/MainMenusEx';
 import { Silder_icon } from '@/components/SubMenus/SubMenus';
@@ -10,8 +11,8 @@ import { FaRegCalendarAlt, FaChevronDown, FaChevronLeft } from 'react-icons/fa';
 import { IoSpeedometerOutline } from 'react-icons/io5';
 
 const Ticketprices = () => {
-    const [isMainOpen, setIsMainOpen] = useState(false);
-    const [isEventOpen, setIsEventOpen] = useState(false);
+    const [isMainOpen, setIsMainOpen] = useState(true);
+    const [isEventOpen, setIsEventOpen] = useState(true);
 
     const toggleMain = () => {
         setIsMainOpen(!isMainOpen);
@@ -20,8 +21,8 @@ const Ticketprices = () => {
     const toggleEvent = () => {
         setIsEventOpen(!isEventOpen);
     };
-  return (
-    <div className='main_container'>
+    return (
+        <div className='main_container'>
             <div className="dashboard_main">
                 <div className="dashboard_section">
                     <div className="sidebar ">
@@ -99,22 +100,17 @@ const Ticketprices = () => {
                     </div>
                     <section className="home-section">
                         <div className="home-content">
-                        <div className="tabs_container">
-                        <Link className="arc_btn" href="/archived">
-                                    {/* <i className='bx bx-chevron-left'></i> */}
-                                    <FaChevronLeft style={{ color: "#FFE100", marginRight: "10px" }} />
-
-                                    <p>Back</p>
-                                </Link>
-                        <TicketPrice title='Archived: Event Title Ticket Prices' label='Save Changes' href='#'/>
-                        </div>
+                            <div className="tabs_container">
+                                
+                                <TicketPrice title=' Event Title Ticket Prices' label='Save Changes' href='#' />
+                            </div>
 
                         </div>
                     </section>
                 </div>
             </div>
         </div>
-  )
+    )
 }
 
 export default Ticketprices

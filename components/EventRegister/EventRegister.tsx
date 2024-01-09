@@ -1,11 +1,20 @@
 import Link from 'next/link'
 import React, { useState } from 'react'
 import { CiCirclePlus } from 'react-icons/ci'
+import ArchivedBack from '../ArchivedBack/ArchivedBack';
 
 
 type AgeValue = 'P' | 'A' | 'H' | null;
 
-const EventRegister = ({ title = '', label = '', href = '' }) => {
+interface EventRegisterProps {
+    title?: string;
+    showBackButton?: boolean;
+    href?: string;
+    label?: string;
+}
+
+
+const EventRegister: React.FC<EventRegisterProps> = ({title = '',  label = '', href = '', showBackButton  })  => {
     const [selectedAge, setSelectedAge] = useState<AgeValue>(null);
 
     const handleCheckboxChange = (value: AgeValue) => {
@@ -26,6 +35,7 @@ const EventRegister = ({ title = '', label = '', href = '' }) => {
   };
     return (
         <div className="Details">
+            {showBackButton && <ArchivedBack />}
             <div className="event_from">
                 <div className="area_form_left">
                     {title && <h2>{title}</h2>}

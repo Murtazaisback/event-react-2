@@ -60,7 +60,7 @@ const PublishEvent = () => {
                             </li>
                             <li>
                                 <div className="iocn-link">
-                                    <Link href="#">
+                                    <Link href="/SmsCampaigns">
                                         <FaRegMessage className=" menu_dash_i" />
                                         <span className="link_name">SMS CAMPAIGNS</span>
                                     </Link>
@@ -104,8 +104,8 @@ const PublishEvent = () => {
                                         <Image src={Publish_img} alt="" />
 
                                         <div className="publish_btns">
-                                            <a className="save_btn">Save Draft</a>
-                                            <a className="w3-bar-item w3-button tablink tab_btn publish_btn" href="./share Event.html">Publish</a>
+                                            <a className="save_btn" href=''>Save Draft</a>
+                                            <a className="w3-bar-item w3-button tablink tab_btn publish_btn" href="/ShareEvent">Publish</a>
                                         </div>
                                     </div>
                                 </div>

@@ -1,5 +1,7 @@
 'use client'
+import ArchivedBack from '@/components/ArchivedBack/ArchivedBack';
 import MainMenusEx from '@/components/MainMenusEx/MainMenusEx';
+import SettingChartCom from '@/components/SettingChartCom/SettingChartCom';
 import { Silder_icon } from '@/components/SubMenus/SubMenus';
 import TicketPrice from '@/components/TicketPrice/TicketPrice';
 import Link from 'next/link';
@@ -9,8 +11,8 @@ import { FaRegCalendarAlt, FaChevronDown, FaChevronLeft } from 'react-icons/fa';
 import { IoSpeedometerOutline } from 'react-icons/io5';
 
 const settingChart = () => {
-    const [isMainOpen, setIsMainOpen] = useState(false);
-    const [isEventOpen, setIsEventOpen] = useState(false);
+    const [isMainOpen, setIsMainOpen] = useState(true);
+    const [isEventOpen, setIsEventOpen] = useState(true);
 
     const toggleMain = () => {
         setIsMainOpen(!isMainOpen);
@@ -98,28 +100,7 @@ const settingChart = () => {
                     </div>
                     <section className="home-section">
                         <div className="home-content">
-                        <div className="manage_order_area">
-                        <Link className="arc_btn" href="/archived">
-                                    {/* <i className='bx bx-chevron-left'></i> */}
-                                    <FaChevronLeft style={{ color: "#FFE100", marginRight: "10px" }} />
-
-                                    <p>Back</p>
-                                </Link>
-                            <div className="manage_two_sec">
-                                <div className="manage_two_info">
-                                    <h1>  Archived: Event Title: Seating Chart</h1>
-                                    <p>This is the seating chart associated with your event. </p>
-                                    <p>WARNING: It is not recommended that you edit this seating chart while your event is published. If you proceed, your customers may lose reserved seats, and you may risk double bookings. Proceed at your own risk.</p>
-                                </div>
-                                <div className="manage_iframe">
-                                    Insert iframe here
-                                </div>
-
-                            </div>
-                            <div className="tiktct_mbtns">
-                                <button>Publish Changes</button>
-                            </div>
-                        </div>
+                       <SettingChartCom title="Event Title: Seating Chart"/>
 
                         </div>
                     </section>
