@@ -6,3 +6,14 @@
 .event_card:hover{
     transform: translateY(-10px);
 }
+.card_menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 30px;
+}
+.card_btn{
+    font-size: 27px;
+    color: #FFE100;
+    cursor: pointer;
+}

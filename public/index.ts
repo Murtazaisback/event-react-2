@@ -1,9 +1,9 @@
-import Logo from "./EV logo no background 1.png"
+import Logo from "./Color logo - no background.png"
 import Hero_img from "./549b4384920328a7ba685f3448c71e1a.png"
 import Des_1 from './seating1.png'
 import Des_2 from './seating2.png'
 import Des_3 from './WhatsApp Image 2024-01-02 at 12.18.12 AM.jpeg'
-import Mine_logo from './mine_logo.png'
+import Mine_logo from './Android.png'
 import Rectangle from './Rectangle 11.png'
 import EventImg from './8 2.png'
 import Render from './Renderer Desktop - Stadium 2.png'

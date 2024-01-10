@@ -11,7 +11,8 @@ nav{
     align-items: center;
 }
 .logo_nav{
-    width: 200px;
+    width: 317px;
+    height: 34px;
 }
 
 .menu {
@@ -66,7 +67,38 @@ nav{
     color: var(--color-yellow);
 }
 
-  @media (max-width: 768px) {
+
+.dropdwon_custom_warp{
+  position: relative;
+}
+.dropdownStyles {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background: #212121;
+  min-width: 160px;
+  color: white;
+  z-index: 1;
+  text-align: right;
+  border-radius: 10px;
+}
+.dropdownStyles ul{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 10px;
+}
+.dropdwon_custom{
+  display: flex;
+  align-items: center;
+  color: #FFE100;
+  cursor: pointer;
+  gap: 20px;
+}
+.dropdwon_custom_i{
+  font-size: 12px;
+}
+  @media (max-width: 1064px) {
     .menu {
       display: block;
       position: absolute;
@@ -161,9 +193,7 @@ nav{
         display: flex;
     }
 
-    .res_none {
-        display: none !important;
-    }
+   
     .navs-links{
         flex-direction: column;
         gap: 5px;

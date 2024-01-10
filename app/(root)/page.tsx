@@ -134,9 +134,9 @@ export default function Home() {
           ref={ref3}
           initial={{ opacity: 0, scale: 0.5 }}
           animate={{ opacity: inView3 ? 1 : 0, scale: inView3 ? 1 : 0.5 }}
-          transition={{ duration: 0.5 }}
+          transition={{ duration: 0.25 }}
           style={{
-            animation: inView3 ? 'none' : 'scaleUpLeft 0.5s forwards',
+            animation: inView3 ? 'none' : 'scaleUpLeft 0.25s forwards',
           }}
         >
 
@@ -185,7 +185,7 @@ export default function Home() {
                   <tr>
                     <td>We Pledge Not to Cancel Your Events</td>
                     <td className="tc"><FaCheck className="small_icon green" /></td>
-                    <td className="tc"><FaCheck className="small_icon green" /></td>
+                    <td className="tc"><FaXmark className="small_icon red" /></td>  
                   </tr>
                 </tbody>
               </table>

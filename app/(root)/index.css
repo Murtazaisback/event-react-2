@@ -40,18 +40,25 @@ main{
 
 .back_hero_img{
     position: absolute;
-    width: 745.2952px;
-    height: 574.6383px;
+    max-width: 636.3574px;
+    max-height: 485.4468px;
     left: 0;
   transition: all 1s ease-in-out;
-  /* rotate: 30deg; */
 }
 .main_header_section{
     display: flex;
     justify-content: center;
     position: relative;
+    margin: 0 auto;
     margin-top: 60px;
+    width: 85%;
+    overflow-Y: hidden;
+    scrollbar-width: 0px !important;
+    justify-content: space-between;
 }
+.main_header_section::-webkit-scrollbar {
+    display: none; 
+  }
 .Hero_imgs{
     position: relative;
     display: flex;
@@ -61,8 +68,8 @@ main{
     position: relative;
 }
 .Hero_img{
-    width: 745.2952px;
-    height: 574.6383px;
+    max-width: 636.3574px;
+    max-height: 485.4468px;
     /* position: absolute; */
 }
 .header_section{
@@ -173,7 +180,7 @@ main{
 .service_cards {
     display: flex;
     align-items: center;
-    gap: 40px;
+    gap: 30px;
     margin-top: 50px;
     /* flex-wrap: wrap; */
     justify-content: center;
@@ -378,9 +385,18 @@ main{
 
 
 
+@media screen and (max-width: 1124px) {
+    .res_none {
+        display: none !important;
+    }
 
+
+}
 
 @media screen and (max-width: 1024px) {
+    .header_section h1{
+        text-align: center;
+    }
     .back_hero_img{
         height: 251.4513px;
         width: 326.1277px;
@@ -393,6 +409,9 @@ main{
     .main_header_section{
         width: 90%;
         margin:50px 80px 50px 45px;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
         
     }
     .header_box{

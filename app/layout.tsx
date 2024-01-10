@@ -15,7 +15,10 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en">
+    <html lang="en">  
+    <head>
+    <link rel="icon" href="/Android.png" />
+    </head>
       <body suppressHydrationWarning={true}  className={inter.className}>{children}</body>
     </html>
   )
