@@ -1,6 +1,8 @@
 'use client'
 import MainMenusEx from '@/components/MainMenusEx/MainMenusEx'
 import SubMenus, { Silder_icon } from '@/components/SubMenus/SubMenus'
+import { Events_imgs } from '@/public'
+import Image from 'next/image'
 import Link from 'next/link'
 import React, { useState } from 'react'
 import { CiCirclePlus } from 'react-icons/ci'
@@ -102,86 +104,43 @@ const EventDash = () => {
                             <div className="event_dash">
                                 <h1>Event Title Show Here</h1>
                                 <div className="event_dash_content">
-                                    <div className="event_dash_btns">
-                                        <h2>What do you want to do?</h2>
-                                        <div className="dash_btns">
-                                            <div className="dash_btn_row aL">
-                                                <Link href="/sellTickets">Sell Tickets</Link>
-                                                <Link href="/managetwo">Hold Seats</Link>
-                                                <Link href="/scanTickets">Scan Tickets</Link>
-                                                <Link href="/ManageOrder">Manage Orders</Link>
-                                            </div>
-                                            <div className="dash_btn_row">
-                                                <Link href="/attendees">Attendees</Link>
-                                                <Link href="/eventdetails">Edit Event Details</Link>
-                                                <Link href="/ticketprices">Manage Ticket Prices</Link>
-                                                <Link href="/settingChart">Edit Seating</Link>
+                                    <div className="event_dash_link">
+                                        <div className="event_dash_bt">
+                                            <h2>What do you want to do?</h2>
+                                            <div className="event_warp_btns">
+                                                <div className="event_dash_btns">
+                                                    <Link href="/sellTickets">Sell Tickets</Link>
+                                                    <Link href="/managetwo">Hold Seats</Link>
+                                                    <Link href="/scanTickets">Scan Tickets</Link>
+                                                    <Link href="/ManageOrder">Manage Orders</Link>
+                                                </div>
+                                                <div className="event_dash_btns">
+                                                    <Link href="/attendees">Manage Attendees</Link>
+                                                    <Link href="/eventdetails">Edit Event Details</Link>
+                                                    <Link href="/ticketprices">Manage Ticket Prices</Link>
+                                                    <Link href="/settingChart">Edit Seating</Link>
+                                                </div>
                                             </div>
                                         </div>
+                                        <Image src={Events_imgs} alt='' className='event_imgs'/>
                                     </div>
-
-                                    <div className="event_dash_actions">
+                                    <div className="event_dash_action">
                                         <h2>Quick Actions</h2>
-                                        <div className="dash_text">
-                                            <div className="dash_btn_row3">
-                                                {/* <p className="bluee cursor_pointer" id="changeableText">Pause Ticket Sales</p> */}
-                                                <p
-                                                    className={`cursor_pointer bluee ${isPaused ? 'bluee' : ''}`}
-                                                    onClick={toggleTicketSales}
-                                                >
-                                                    {isPaused ? 'Pause Ticket Sales' : 'Resume Ticket Sales'}
-                                                </p>
-
-
-                                                <a href="#popup21" className="unique_dashbtn">
-
-                                                    <p className="whitee ">End Ticket Sales</p>
-                                                </a>
-                                                <div id="popup21" className="overlay">
-
-                                                    <div className="popupmain">
-
-
-
-
-                                                        <div className="order_done">
-
-
-                                                            <a className="cursor_pointer" href="#">Confirm Your Changes</a>
-                                                        </div>
-                                                    </div>
-                                                </div>
-
-
-
-                                                <a className="redd " href="#popup22">Cancel Event</a>
-                                                <div id="popup22" className="overlay">
-
-                                                    <div className="popupmain">
-
-
-
-
-                                                        <div className="order_done">
-
-
-                                                            <a className="cursor_pointer" href="#">confirm Your Changes</a>
-                                                        </div>
-                                                    </div>
-                                                </div>
-
+                                        <div className="event_dash_info">
+                                            <div className="event_dash_ctr">
+                                                <Link href="">Pause Ticket Sales</Link>
+                                                <Link href="">End Ticket Sales</Link>
+                                                <Link href="">Cancel Event</Link>
                                             </div>
-                                            <div className="dash_btn_row2">
+                                            <div className="event_dash_text">
                                                 <p>Pausing ticket sales will temporarily prevent customers and you from being able to sell tickets online through Event Visionary. You may resume ticket sales by clicking “Resume Sales” at any time before the scheduled end of sales date defined in the event details section.</p>
                                                 <p>Ending Ticket sales will prevent you and your customers from being able to purchase tickets for this event. This cannot be undone.</p>
                                                 <p>Note: It is your responsibility to let your clients and customers know that this event has been canceled.</p>
                                             </div>
-
-
                                         </div>
-
                                     </div>
                                 </div>
+
                             </div>
 
                         </div>
