@@ -93,15 +93,21 @@ export const Silder_icon = () => {
   };
 
   return (
-    <li id="Iconss" className="">
-      <span className='dash_i_warp' onClick={toggleSidebar}>
-        {isSidebarOpen ? (
-          <FaArrowLeft className="dashboard_i" />
-        ) : (
-          <FaArrowRight className="dashboard_i" />
-        )}
-      </span>
-    </li>
+    <div className="icon-wrapper-arrow" onClick={toggleSidebar}>
+      <svg
+        width="9"
+        height="17"
+        viewBox="0 0 9 17"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M8.41667 1L1.24748 8.16919C0.841541 8.57513 0.859961 9.23874 1.28779 9.62153L8.41667 16"
+          stroke="#FAE100"
+          stroke-linecap="round"
+        />
+      </svg>
+    </div>
   );
 };
 export default SubMenus 

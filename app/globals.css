@@ -4477,10 +4477,11 @@ input:checked+.slider:before {
     z-index: 100;
     transition: all 0.5s ease;
     padding: 10px;
+    position: relative;
 }
 
 .sidebar.close {
-    width: 60px;
+    width: 75px;
 }
 
 .sidebar .logo-details {
@@ -4962,10 +4963,26 @@ input:checked+.slider:before {
     align-items: center;
 }
 
+.relative {
+    position: relative;
+  }
 
 
-
-
+.icon-wrapper-arrow {
+    position: absolute;
+  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 999;
+    top: 250px;
+    cursor: pointer;
+    right: -5px;
+    width: 34px;
+    height: 69px;
+    background-size: contain;
+    background-image: url("../public/bg-triangle.svg");
+  }
 
 
 
@@ -4977,6 +4994,10 @@ input:checked+.slider:before {
 
 /*Stying for small screens*/
 @media screen and (max-width: 860px) {
+    .icon-wrapper-arrow{
+        top: 40px;
+        right: -5px;
+    }
     .box2{
         margin-top: 40px;
     }
@@ -5250,7 +5271,7 @@ input:checked+.slider:before {
     }
 
     .sidebar.close {
-        width: 50px;
+        width: 70px;
     }
 
     .sidebar.close~.home-section {
