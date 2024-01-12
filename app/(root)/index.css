@@ -73,8 +73,6 @@ main{
     /* position: absolute; */
 }
 .header_section{
-    /* margin-left: 40px; */
-    /* margin-top: 40px; */
     background-color: transparent;
     position: relative;
 }
@@ -82,7 +80,7 @@ main{
     color: #FFF;
     font-size: 84px;
     font-style: normal;
-    font-family: 'Inter';
+    /* font-family: 'Inter' !important ; */
     font-weight: 400;
     line-height: normal;
 }
@@ -209,6 +207,7 @@ main{
 }
 .service_card p{
     font-size: 1rem;
+    font-weight: 300;
 }
 
 .service_card:nth-child(2) {
@@ -224,8 +223,8 @@ main{
 }
 
 .service_card_title {
-    font-size: 18px;
-    /* font-weight: 600; */
+    font-size: 23px;
+    font-weight: 500;
 }
 
 

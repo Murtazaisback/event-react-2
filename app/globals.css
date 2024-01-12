@@ -147,7 +147,7 @@ body {
 * {
     margin: 0;
     padding: 0;
-    font-family: 'Inter', sans-serif;
+    /* font-family: 'Inter', sans-serif; */
     /* letter-spacing: 1px; */
     font-weight: 400;
 }
@@ -1557,7 +1557,7 @@ input:checked+.slider:before {
 }
 
 .card_info p {
-    padding-bottom: 5px;
+    /* padding-bottom: 5px; */
     margin-bottom: 10px;
     font-size: 15px;
 }
@@ -3989,6 +3989,10 @@ input:checked+.slider:before {
     /* gap: 200px; */
 
 }
+.my_acc_section h1{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
 
 .my_acc_row {
     display: flex;
@@ -4772,6 +4776,7 @@ input:checked+.slider:before {
     height: 100%;
     /* box-shadow: 2px 2px 4px 0px #212121 inset, -2px -2px 4px 0px #25251F inset; */
     padding-bottom: 20px;
+    min-height: 80vh;
 }
 
 
