@@ -35,8 +35,13 @@ nav{
     text-decoration: none;
 }
 .navs-links li a:hover{
-    color: var(--color-yellow);
+    /* color: var(--color-yellow); */
     transition: all ease-in-out 0.25s;
+    background: linear-gradient(90deg, rgba(190,158,68,1) 0%, rgba(216,198,144,1) 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent !important;
+    font-weight: 700 !important;
 }
 .li_active {
     border: 2px solid var(--color-yellow);
@@ -99,6 +104,10 @@ nav{
   font-size: 12px;
 }
   @media (max-width: 1064px) {
+    .logo_nav{
+      width: 214.7404px;
+      height: 23.1489px;
+  }
     .menu {
       display: block;
       position: absolute;
@@ -203,6 +212,7 @@ nav{
   }
 
   
+
   .icon_i {
     font-size: 28px; /* Adjust the size as needed */
 }

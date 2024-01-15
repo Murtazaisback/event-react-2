@@ -88,7 +88,7 @@ const SingleEvent = () => {
 
                                     </div>
 
-                                    <div className="get_ticket_cart res_none">
+                                    <div className="get_ticket_cart ">
 
                                         <div className="get_ticket_carti"></div>
                                         <div className="cart_ticker">
@@ -394,8 +394,8 @@ const SingleEvent = () => {
                                             <RiCloseFill color="#FAE100" className="Xmarks" />
 
                                         </a>
-                                        <a className="fclose pc_none" href="#popup15">
-                                            <i className='bx bx-chevron-left'  ></i>
+                                        <a className="fclose pc_none" href="#popup14">
+                                        <IoIosArrowBack />
                                         </a>
 
                                         <div className="get_ticket_overi res_m">
@@ -573,6 +573,7 @@ const SingleEvent = () => {
                                             <FaLinkedin className="share_i" />
                                         </a>
                                     </div>
+                                    
                                 </div>
                             </div>
                             <div className="samll_container">

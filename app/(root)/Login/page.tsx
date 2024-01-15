@@ -42,6 +42,11 @@ const Login = () => {
                                 <Link href="/Sign_Up" className="cursor_pointer">Sign Up</Link>
 
                             </div>
+                            <div className="sign_btnss">
+                                <p >Forget You Psssword?</p>
+                                <Link href="/forgot" className="cursor_pointer">Reset Psssword</Link>
+
+                            </div>
                             <Link href="/Login_org">Or login as <span className='yellow_cr'>Organizer</span> </Link>
 
                         </div>

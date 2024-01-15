@@ -1,7 +1,11 @@
 .share_icon_i{
-    font-size: 59px !important;
+    font-size: 49px !important;
     margin-top: 10px;
-    color: #53ACFF;
+    color: white;
+    transition: all ease-in-out 0.25s;
+}
+.share_icon_i:hover{
+    color: #FFE100;
 }
 .share_link_i{
     font-size: 25px;

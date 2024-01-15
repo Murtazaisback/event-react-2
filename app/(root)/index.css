@@ -52,7 +52,7 @@ main{
     margin: 0 auto;
     margin-top: 60px;
     width: 85%;
-    overflow-Y: hidden;
+    /* overflow-Y: hidden; */
     scrollbar-width: 0px !important;
     justify-content: space-between;
 }
@@ -83,6 +83,10 @@ main{
     /* font-family: 'Inter' !important ; */
     font-weight: 400;
     line-height: normal;
+    /* background: linear-gradient(90deg, rgba(190,158,68,1) 0%, rgba(216,198,144,1) 100%);
+    background-clip: text;
+    color: transparent;
+    -webkit-background-clip: text; */
 }
 
 .header_box {
@@ -450,6 +454,7 @@ main{
         flex-direction: column;
         margin: auto;
         margin-top: 50px;
+        overflow-y: hidden;
     }
     .header_section{
         width: auto;

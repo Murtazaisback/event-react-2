@@ -13,7 +13,7 @@
 .coustomer_form {
     display: flex;
     flex-direction: column;
-    gap: 50px;
+    gap: 40px;
     padding: 30px;
     border-radius: 10px;
     width: 100%;

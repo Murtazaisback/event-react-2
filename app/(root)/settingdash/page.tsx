@@ -10,9 +10,11 @@ import { IoSpeedometerOutline } from 'react-icons/io5'
 import { RiMoneyDollarCircleLine } from 'react-icons/ri'
 import { SlLocationPin } from 'react-icons/sl'
 
+import "./index.css"
+
 const Settingdash = () => {
-  return (
-    <div className='main_container'>
+    return (
+        <div className='main_container'>
             <div className="dashboard_main">
                 <div className="dashboard_section">
                     <div className="sidebar ">
@@ -75,116 +77,114 @@ const Settingdash = () => {
                     </div>
                     <section className="home-section">
                         <div className="home-content">
-                        <div className="main_setting">
-                        <h1>Settings</h1>
-                        <div className="main_set">
-                            <div className="main_set_left">
-                                <h2>Payout Method</h2>
-                                <p>Choose an option below to connect your account to a payout method. This is how you will receive payouts for customers’ ticket purchases.</p>
-                                <div className="set_icons">
-                                    <Image src={Strip} alt=''/>
-                                    <Image src={Square} alt=''/>
-                                </div>
-                                <div className="logo2">
-                                    <p>logo</p>
-                                    {/* <img src="./imgs/Rectangle 74.png" alt=""/> */}
-                                    <Image src={Settingdasg_img} alt='' className='setting_img'/>
-                                </div>
-                                
-                                <p>Display Contact Information</p>
-                                <div className="info_tdisplay">
-                                    <div className="itdisplay">
-                                        <label className="switch">
-                                            <input type="checkbox" checked/>
-                                            <span className="slider round"></span>
-                                        </label>
-                                        <label htmlFor="">Email:</label>
-                                        <input type="email"/>
+                            <div className="main_setting">
+                                <h1>Settings</h1>
+                                <div className="main_set">
+                                    <div className="setting_contact">
+                                        <div className="setting_contact_warp">
+
+                                            <p>Display Contact Information</p>
+                                            <div className="setting_contact_inp">
+                                                <label className="switch">
+                                                    <input type="checkbox" className="age-checkbox" checked />
+                                                    <span className="slider round"></span>
+                                                </label>
+                                                <label htmlFor="">Email:</label>
+                                                <input type="email" className='setting_contact_input' />
+
+                                            </div>
+                                            <div className="setting_contact_inp">
+                                                <label className="switch">
+                                                    <input type="checkbox" className="age-checkbox" checked />
+                                                    <span className="slider round"></span>
+                                                </label>
+                                                <label htmlFor="">Phone:</label>
+                                                <input type="number" className='setting_contact_input' />
+
+                                            </div>
+                                        </div>
+                                        <div className="setting_logos">
+                                            <p>Logo:</p>
+                                            <div className="setting_logo"></div>
+
+                                        </div>
+                                    </div>
+                                    <div className="setting_pay">
+                                        <p className='yellow_cr'>Payout Method</p>
+                                        <p>Choose an option below to connect your account to a payout method. This is how you will receive payouts for customers’ ticket purchases.</p>
+                                        <div className="pay_logos">
+
+                                            <Image src={Strip} alt='' />
+                                            <Image src={Square} alt='' />
+                                        </div>
 
                                     </div>
-                                    <div className="itdisplay">
-                                        <label className="switch">
-                                            <input type="checkbox" checked/>
-                                            <span className="slider round"></span>
-                                        </label>
-                                        <label htmlFor="">Phone:</label>
-                                        <input type="number"/>
+                                    <div className="method">
+                                        <p className='yellow_cr'>Payout Method</p>
+                                        <p>Billing Information</p>
+                                        <p>You will only be charged in the event you elect to absorb service fees or use our SMS campaigns service.</p>
+                                        <form action="" className='setting_method'>
+                                            <div className="setting_method_row">
+                                            <div className="method_inputs">
+
+                                                <div className="method_input">
+                                                    <label htmlFor="">First Name</label>
+                                                    <input type="text" />
+                                                </div>
+                                                <div className="method_input">
+                                                    <label htmlFor="">Last Name</label>
+                                                    <input type="text" />
+                                                </div>
+                                            </div>
+                                            <div className="method_inputs">
+
+                                                <div className="method_input">
+                                                    <label htmlFor="">Billing Address</label>
+                                                    <input type="text" />
+                                                </div>
+                                                <div className="method_input">
+                                                    <label htmlFor="">City</label>
+                                                    <input type="text" />
+                                                </div>
+                                                <div className="method_input">
+                                                    <label htmlFor="">State</label>
+                                                    <input type="text" />
+                                                </div>
+                                                <div className="method_input">
+                                                    <label htmlFor="">Postal Code</label>
+                                                    <input type="number" />
+                                                </div>
+                                            </div>
+                                            <div className="method_inputs">
+
+                                                <div className="method_input">
+                                                    <label htmlFor="">Credit/Debit Card</label>
+                                                    <input type="number" />
+                                                </div>
+                                            </div>
+                                            <div className="method_inputs">
+
+                                                <div className="method_input">
+                                                    <label htmlFor="">Security Code</label>
+                                                    <input type="number" />
+                                                </div>
+                                                <div className="method_input">
+                                                    <label htmlFor="">Exp Date</label>
+                                                    <input type="number" />
+                                                </div>
+                                            </div>
+                                            </div>
+                                            <div className='save_btn_method'>
+
+                                            <button type='submit'>Save</button>
+                                            </div>
+                                        </form>
+
 
                                     </div>
-                                </div>
-                               
 
+                                </div>
                             </div>
-                            <div className="main_set_right">
-                                <form action="">
-                                    <h2>Payment Method</h2>
-                                    <p>Billing Information</p>
-                                    <p>You will only be charged in the event you elect to absorb service fees or use our SMS campaigns service.</p>
-                                    <div className="set_form">
-                                        <div className="set_formI">
-
-                                            <label htmlFor="">First Name</label>
-                                            <input type="text"/>
-                                        </div>
-                                        <div className="set_formI">
-
-                                            <label htmlFor="">Last Name</label>
-                                            <input type="text"/>
-                                        </div>
-                                    </div>
-                                    <div className="set_formI">
-                                        
-                                        <label htmlFor="">Billing Address</label>
-                                        <input type="text" className="in_long"/>
-                                    </div>
-                                    
-                                    <div className="set_form">
-                                        <div className="set_formI">
-
-                                            <label htmlFor=""> City</label>
-                                            <input type="text"/>
-                                        </div>
-                                        <div className="set_formI">
-
-                                            <label htmlFor="">State </label>
-                                            <input type="text"/>
-                                        </div>
-                                    </div>
-                                    
-                                    
-                                    <div className="set_form">  
-                                        <div className="set_form2">
-                                            
-                                            <label htmlFor=""> Postal Code</label>
-                                            <input type="text"/>
-                                        </div>
-                                    </div>
-                                    <div className="set_formI">
-                                        
-                                        <label htmlFor="">Credit/Debit Card</label>
-                                        <input type="text" className="in_long"/>
-                                    </div>
-
-
-                                    <div className="set_form">
-                                        <div className="set_form2">
-
-                                            <label htmlFor=""> Security Code</label>
-                                            <input type="text"/>
-                                        </div>
-                                        <div className="set_form2">
-
-                                            <label htmlFor="">Exp Date</label>
-                                            <input type="text"/>
-                                        </div>
-                                    </div>
-                                </form>
-                                <button type="submit" className="setting_save cursor_pointer">Save</button>
-                                
-                            </div>
-
-                        </div>
-                    </div>
 
 
                         </div>
@@ -192,7 +192,7 @@ const Settingdash = () => {
                 </div>
             </div>
         </div>
-  )
+    )
 }
 
 export default Settingdash

@@ -2,16 +2,26 @@
 import { Logo } from '@/public'
 import Image from 'next/image'
 import Link from 'next/link'
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 
 import './index.css'
 import { BsX, BsList } from 'react-icons/bs'
 import { FaChevronDown } from 'react-icons/fa'
+import { useRouter } from 'next/router'
 
 
 
 const Header = () => {
+    const [selectedLink, setSelectedLink] = useState('/'); // Initial selected link is '/'
     const [isOpen, setIsOpen] = useState(false);
+
+    const links = [
+        { path: '/', text: 'Home' },
+        { path: '/Pricing', text: 'Pricing' },
+        { path: '/EventsPage', text: 'EVENTS' },
+        { path: '/Login', text: 'Login', className: 'login-button pc_none' },
+        { path: '/NewEvent', text: 'CREATE EVENT', className: 'li_active' },
+    ];
 
     const toggleMenu = () => {
         setIsOpen(!isOpen);
@@ -39,11 +49,20 @@ const Header = () => {
             </button>
             <div className={`menu ${isOpen ? 'open' : ''}`}>
                 <ul className="navs-links">
-                    <li><Link href="/" onClick={closeMenu}>Home</Link></li>
-                    <li><Link href="/Pricing" onClick={closeMenu}>Pricing</Link></li>
-                    <li><Link href="/EventsPage" onClick={closeMenu}>EVENTS</Link></li>
-                    <li><Link className="login-button pc_none" href="/Login" onClick={closeMenu}>Login</Link></li>
-                    <li><Link href="/NewEvent" className="li_active" onClick={closeMenu}>CREATE EVENT</Link></li>
+                    {links.map(({ path, text, className }) => (
+                        <li key={path}>
+                            <Link
+                                href={path}
+                                onClick={() => {
+                                    setSelectedLink(path);
+                                    closeMenu();
+                                }}
+                                className={`${className || ''} ${selectedLink === path ? 'yellow_crr' : ''}`}
+                            >
+                                {text}
+                            </Link>
+                        </li>
+                    ))}
                 </ul>
             </div>
             <div className='dropdwon_custom_warp' style={{display: "none"}}>
