@@ -1,81 +1,92 @@
-nav{
-    width: 85%;
-    margin: 0 auto;
-    margin-top: 20px;
-    background-color: transparent;
-    /* box-shadow: 0 3px 20px rgba(0, 0, 0, 0.2); */
-    display: flex;
-    position: relative;
-    z-index: 10;
-    justify-content: space-between;
-    align-items: center;
+nav {
+  width: 85%;
+  margin: 0 auto;
+  margin-top: 20px;
+  background-color: transparent;
+  /* box-shadow: 0 3px 20px rgba(0, 0, 0, 0.2); */
+  display: flex;
+  position: relative;
+  z-index: 10;
+  justify-content: space-between;
+  align-items: center;
 }
-.logo_nav{
-    width: 317px;
-    height: 34px;
+
+.logo_nav {
+  width: 317px;
+  height: 34px;
 }
 
 .menu {
-    display: block;
-    max-height: none;
+  display: block;
+  max-height: none;
 }
-  
-.menu-btn {
-    display: none;
-  }
-.navs-links{
-    list-style: none;
-    display: flex;
-    align-items: center;
-    gap: 20px;
-}
-.navs-links li a{
-    color: white;
-    font-size: 16px;
-    text-decoration: none;
-}
-.navs-links li a:hover{
-    /* color: var(--color-yellow); */
-    transition: all ease-in-out 0.25s;
-    background: linear-gradient(90deg, rgba(190,158,68,1) 0%, rgba(216,198,144,1) 100%);
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent !important;
-    font-weight: 700 !important;
-}
-.li_active {
-    border: 2px solid var(--color-yellow);
-    border-radius: 30px;
-    padding: 10px;
 
+.menu-btn {
+  display: none;
 }
+
+.navs-links {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.navs-links li a {
+  color: white;
+  font-size: 16px;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.navs-links li a:hover {
+  /* color: var(--color-yellow); */
+  transition: all ease-in-out 0.25s;
+  background: linear-gradient(90deg, rgba(190, 158, 68, 1) 0%, rgba(216, 198, 144, 1) 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  font-weight: 500;
+}
+
+.li_active {
+  border-radius: 30px;
+  padding: 10px;
+  font-weight: 500;
+  background: linear-gradient(90deg, rgba(190, 158, 68, 1) 0%, rgba(216, 198, 144, 1) 100%);
+  color: #000 !important;
+  transition: all ease-in-out 0.25s !important;
+} 
+
 
 .li_active:hover {
-    background: var(--color-yellow);
-    color: #000 !important;
+  font-weight: 500;
+  color: transparent !important;;
+  border: 1px solid #FFE100;
 }
 
 .login-button {
-    background-color: transparent;
-    /* border: 1.5px solid #f2f5f7; */
-    border-radius: 2em;
-    padding: 0.6rem 0.8rem;
-    margin-left: 2vw;
-    font-size: 1rem;
-    cursor: pointer;
-    border: none;
-    transition: all 0.25s ease-in-out;
+  background-color: transparent;
+  /* border: 1.5px solid #f2f5f7; */
+  border-radius: 2em;
+  padding: 0.6rem 0.8rem;
+  margin-left: 2vw;
+  font-size: 1rem;
+  cursor: pointer;
+  border: none;
+  transition: all 0.25s ease-in-out;
 
 }
 
 .login-button:hover {
-    color: var(--color-yellow);
+  color: var(--color-yellow);
 }
 
 
-.dropdwon_custom_warp{
+.dropdwon_custom_warp {
   position: relative;
 }
+
 .dropdownStyles {
   position: absolute;
   top: 100%;
@@ -87,132 +98,148 @@ nav{
   text-align: right;
   border-radius: 10px;
 }
-.dropdownStyles ul{
+
+.dropdownStyles ul {
   display: flex;
   flex-direction: column;
   gap: 20px;
   padding: 10px;
 }
-.dropdwon_custom{
+
+.dropdwon_custom {
   display: flex;
   align-items: center;
   color: #FFE100;
   cursor: pointer;
   gap: 20px;
 }
-.dropdwon_custom_i{
+
+.dropdwon_custom_i {
   font-size: 12px;
 }
-  @media (max-width: 1064px) {
-    .logo_nav{
-      width: 214.7404px;
-      height: 23.1489px;
-  }
-    .menu {
-      display: block;
-      position: absolute;
-      top: 60px;
-      right: 0px;
-      background-color: #131418; /* Set your desired background color */
-      border-radius: 5px;
-      overflow: hidden;
-      transition: all 0.5s ease, opacity 0.5s ease;
-      height: 0;
-      opacity: 0;
-      visibility: hidden;
-      }
-  
-      .menu-btn {
-        display: block;
-        padding: 10px 20px;
-        background-color: transparent; /* Set background to transparent */
-        color: white; /* Adjust text color if necessary */
-        border: none;
-        border-radius: 5px;
-        cursor: pointer;
-        transition: color 0.5s ease; /* Add transition for text color */
-      }
-  
-    .menu-btn span {
-      display: block;
-      width: 24px;
-      height: 2px;
-      margin-bottom: 4px;
-      /* background-color: #333; */
-      transition: transform 0.5s ease;
-    }
-  
-    .menu-btn.open span:nth-child(1) {
-      transform: none; /* Remove rotation */
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%) rotate(45deg); /* Rotate 45 degrees */
-    }
-  
-    .menu-btn.open span:nth-child(2) {
-      transform: none; /* Remove rotation */
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%) rotate(-45deg); /* Rotate -45 degrees */
-    }
-  
-    
-    .menu.open {
-      height: 350px; 
-      /* height: 100%; */
-      opacity: 1;
-      visibility: visible;
-      width: 100%;
-      
-    }
-    
-    
-    .menu ul {
-      list-style-type: none;
-      padding: 0;
-      padding: 20px;
-    }
-    
-    .menu li {
-      padding: 10px 20px;
-      /* border-bottom: 1px solid #ddd; */
-    }
-    
-    .menu li:last-child {
-      border-bottom: none;
-    }
-    
-    .menu a {
-      text-decoration: none;
-      transition: color 0.3s ease;
-    }
-    
-  
-    .menu-btn span {
-      display: block;
-      width: 24px; /* Adjust as necessary */
-      height: 2px;
-      margin-bottom: 4px;
-      background-color: white;
-      transition: transform 0.3s ease;
-    }
-    .pc_none {
-        display: flex;
-    }
 
-   
-    .navs-links{
-        flex-direction: column;
-        gap: 5px;
-        padding: 10px;
-    }
-    
+@media (max-width: 1064px) {
+  .logo_nav {
+    width: 214.7404px;
+    height: 23.1489px;
   }
 
-  
+  .menu {
+    display: block;
+    position: absolute;
+    top: 60px;
+    right: 0px;
+    background-color: #131418;
+    /* Set your desired background color */
+    border-radius: 5px;
+    overflow: hidden;
+    transition: all 0.5s ease, opacity 0.5s ease;
+    height: 0;
+    opacity: 0;
+    visibility: hidden;
+  }
 
-  .icon_i {
-    font-size: 28px; /* Adjust the size as needed */
+  .menu-btn {
+    display: block;
+    padding: 10px 20px;
+    background-color: transparent;
+    /* Set background to transparent */
+    color: white;
+    /* Adjust text color if necessary */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: color 0.5s ease;
+    /* Add transition for text color */
+  }
+
+  .menu-btn span {
+    display: block;
+    width: 24px;
+    height: 2px;
+    margin-bottom: 4px;
+    /* background-color: #333; */
+    transition: transform 0.5s ease;
+  }
+
+  .menu-btn.open span:nth-child(1) {
+    transform: none;
+    /* Remove rotation */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+    /* Rotate 45 degrees */
+  }
+
+  .menu-btn.open span:nth-child(2) {
+    transform: none;
+    /* Remove rotation */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(-45deg);
+    /* Rotate -45 degrees */
+  }
+
+
+  .menu.open {
+    height: 350px;
+    /* height: 100%; */
+    opacity: 1;
+    visibility: visible;
+    width: 100%;
+
+  }
+
+
+  .menu ul {
+    list-style-type: none;
+    padding: 0;
+    padding: 20px;
+  }
+
+  .menu li {
+    padding: 10px 20px;
+    /* border-bottom: 1px solid #ddd; */
+  }
+
+  .menu li:last-child {
+    border-bottom: none;
+  }
+
+  .menu a {
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+
+
+  .menu-btn span {
+    display: block;
+    width: 24px;
+    /* Adjust as necessary */
+    height: 2px;
+    margin-bottom: 4px;
+    background-color: white;
+    transition: transform 0.3s ease;
+  }
+
+  .pc_none {
+    display: flex;
+  }
+
+
+  .navs-links {
+    flex-direction: column;
+    gap: 5px;
+    padding: 10px;
+  }
+
+}
+
+
+
+.icon_i {
+  font-size: 28px;
+  /* Adjust the size as needed */
 }

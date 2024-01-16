@@ -115,18 +115,14 @@ main{
 
 .btn {
     border-radius: 25px;
-    border: 1px solid #FAE100;
     padding: 10px 15px;
-    /* width: 80px; */
     text-align: center;
-    /* text-align: center; */
     transition: all ease-in-out 0.25s;
     font-size: 17px;
+    font-weight: 500;
 }
 
 .btn:hover {
-    background-color: var(--color-yellow);
-    /* color: white; */
     color: black;
 }
 

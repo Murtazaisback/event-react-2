@@ -93,6 +93,7 @@ const Venues = () => {
                                 </div>
                                 <div className="manage_filter_table">
                                     <table className="manage_filter_tables">
+                                        <div className="table_bar"></div>
                                         <thead>
                                             <tr>
                                                 <th>Venue Name</th>
