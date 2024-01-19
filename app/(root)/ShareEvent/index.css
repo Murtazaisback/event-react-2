@@ -1,5 +1,9 @@
+.share_icon{
+    display: flex;
+    gap: 20px;
+}
 .share_icon_i{
-    font-size: 49px !important;
+    font-size: 39px !important;
     margin-top: 10px;
     color: white;
     transition: all ease-in-out 0.25s;

@@ -11,7 +11,7 @@ const Sign_Up_org = () => {
       <div className="login_container">
                 <div className="login_section">
 
-                        <div className="coustomer_form yellow_bg">
+                        <div className="coustomer_form ">
                             <h2>ORGANIZERS</h2>
 
                             <form action="" className="login_cous" >

@@ -30,7 +30,7 @@ const Sign_Up = () => {
                             </form>
                             <div className="sign_btnss">
                                 <p >Already have an account?</p>
-                                <Link href="/Login" className="cursor_pointer" >Login</Link>
+                                <Link href="/Login" className="cursor_pointer sign_btnss" >Login</Link>
 
                             </div>
                             <Link href="/Sign_Up_org">Or Sign up as <span className='yellow_cr'>Organizer</span> </Link>

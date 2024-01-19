@@ -20,6 +20,8 @@ import SellTick_img from './Designer - Section 1.png'
 import TicketPF_Img from './EV logo no background 1.png'
 import Events_imgs from "./Rectangle 121.png"
 
+import Upload_img from './upload 1.png'
+
 
 export{
     Logo,
@@ -43,4 +45,5 @@ export{
     SellTick_img,
     TicketPF_Img,
     Events_imgs,
+    Upload_img,
 }

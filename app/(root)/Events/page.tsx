@@ -28,7 +28,7 @@ const Events = () => {
                                     <p>Event Title</p>
                                     <p>Sat, July 15, 2025 • 7:30 PM</p>
                                     <p>Venue Name</p>
-                                    <Link href="/SingleEvent" className="btn sm">Get tickets</Link>
+                                    <Link href="/SingleEvent" className="btn sm">Sell tickets</Link>
                                 </div>
                             </div>
                             <div className="event_card">
@@ -37,8 +37,8 @@ const Events = () => {
                                     <p>Event Title</p>
                                     <p>Sat, July 15, 2025 • 7:30 PM</p>
                                     <p>Venue Name</p>
-                                    <Link href="/SingleEvent" className="btn sm">Get tickets</Link>
-                                    {/* <a href="./singleevent.html" className="btn sm">Get tickets</a> */}
+                                    <Link href="/SingleEvent" className="btn sm">Sell tickets</Link>
+                                    {/* <a href="./singleevent.html" className="btn sm">Sell tickets</a> */}
                                 </div>
                             </div>
                             <div className="event_card">
@@ -47,7 +47,7 @@ const Events = () => {
                                     <p>Event Title</p>
                                     <p>Sat, July 15, 2025 • 7:30 PM</p>
                                     <p>Venue Name</p>
-                                    <Link href="/SingleEvent" className="btn sm">Get tickets</Link>
+                                    <Link href="/SingleEvent" className="btn sm">Sell tickets</Link>
                                     {/* <a href="./singleevent.html" className="btn sm">Get tickets</a> */}
                                 </div>
                             </div>

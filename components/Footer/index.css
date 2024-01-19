@@ -53,8 +53,9 @@ footer {
 }
 
 .footer_form button:hover {
-    color: black;
-    border: none;
+    color: white;
+    border: 1px solid #be9e44;
+    background: none;
 
 }
 

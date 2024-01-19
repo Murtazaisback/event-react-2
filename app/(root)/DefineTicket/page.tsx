@@ -98,7 +98,7 @@ const page = () => {
                                         href="/ShareEvent">4. share Event
                                     </Link>
                                 </div>
-                                <TicketPrice label='next' href='/PublishEvent'/>
+                                <TicketPrice label='Next' href='/PublishEvent'/>
 
 
 

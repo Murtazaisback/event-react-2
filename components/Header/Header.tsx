@@ -84,7 +84,7 @@ const Header = () => {
                 )}
             </div>
 
-            <Link href="/Login" className="login-button yellow_cr res_none" onClick={closeMenu}>Login</Link>
+            <Link href="/Login" className="login-button  res_none" onClick={closeMenu}>Login</Link>
         </nav>
     )
 }

@@ -31,13 +31,13 @@ const Footer = () => {
                 <div className="footer_info_links">
                     <b>Quick Links</b>
                     <ul>
-                        <li><a href="./index.html">Home</a></li>
-                        <li><a href="./about.html">About</a></li>
-                        <li><a href="./newevent.html">Create an Event</a></li>
-                        <li><a href="./dashboard.html">Organizer Dashboard</a></li>
-                        <li><a href="./pricing.html">Pricing</a></li>
-                        <li><a href="./Terms.html">Privacy Policy</a></li>
-                        <li><a href="./Terms.html">Terms and Conditions</a></li>
+                        <li><a href="/">Home</a></li>
+                        <li><a href="/About">About</a></li>
+                        <li><a href="/NewEvent">Create an Event</a></li>
+                        <li><a href="/Dashboard">Organizer Dashboard</a></li>
+                        <li><a href="/Pricing">Pricing</a></li>
+                        <li><a href="/">Privacy Policy</a></li>
+                        <li><a href="/Terms_and_Conditions">Terms and Conditions</a></li>
                     </ul>
                 </div>
                 <div className="footer_info_follow">

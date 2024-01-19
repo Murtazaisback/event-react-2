@@ -123,8 +123,11 @@ main{
 }
 
 .btn:hover {
-    color: black;
+    border: 1px solid #be9e44;
+    background: none;
+    color: white;
 }
+
 
 
 .header_text {

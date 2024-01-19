@@ -1,5 +1,6 @@
 .form_X {
     font-size: 24px !important;
+    cursor: pointer;
 }
 
 
@@ -156,6 +157,7 @@
     background: #131310;
     display: none;
     margin-bottom: 20px;
+    margin-top: 20px;
 }
 
 .ticket_form_sec_hide table thead tr {
@@ -250,3 +252,13 @@
     margin-bottom: 20px;
     margin-top: 10px;
 }
+
+.ticket_type_only {
+    /* Add your regular transition duration here */
+    transition: opacity 0.3s, transform 0.3s;
+  }
+  
+  .ticket_type_only.instant-hide .switch,
+  .ticket_type_only.instant-hide .slider {
+    transition: none !important;
+  }

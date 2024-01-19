@@ -11,6 +11,7 @@ import { BsShare } from 'react-icons/bs';
 
 import '../../../public/Renderer Desktop - Stadium 2.png'
 import { IoIosArrowBack } from 'react-icons/io'
+import SellTicketPop from '@/components/SellTicketPop/SellTicketPop'
 
 const SingleEvent = () => {
     return (
@@ -64,29 +65,7 @@ const SingleEvent = () => {
                                     </a>
 
 
-                                    <div className="get_ticket_over">
-                                        <div className="get_ticket_overi">
-
-                                            <h1>Event Title</h1>
-                                            {/* <p className="res_yellow">Saturday, July 5, 2025 at 7:30 pm PST</p> */}
-                                            <p className="res_p">Select your seat(s) or table(s) below to add it to your cart</p>
-                                        </div>
-                                        <Image alt='' src={Render} className="res_triangle" />
-                                        <div className="promo_ticket">
-                                            <form action="" className="promo_cl res_none">
-                                                <label htmlFor="promo">Promo Code</label>
-                                                <div className="promo_ticket_input">
-                                                    <input type="text" />
-                                                    <button type="submit">Apply</button>
-                                                </div>
-                                            </form>
-                                            <div className="box">
-                                                <a className="btn res_none" href="#popup15">Get Tickets</a>
-                                            </div>
-
-                                        </div>
-
-                                    </div>
+                                    <SellTicketPop/>
 
                                     <div className="get_ticket_cart ">
 
@@ -264,7 +243,7 @@ const SingleEvent = () => {
                                                         <a className="" href="#popup14">Back</a>
 
                                                     </div>
-                                                    <a className="btn" href="#popup16">Get Tickets</a>
+                                                    <a className="btn" href="#popup16">Sell Tickets</a>
                                                 </div>
                                             </div>
 

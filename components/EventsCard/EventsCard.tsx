@@ -22,7 +22,7 @@ const EventsCard = ({ showMenuButton = true, eventDateTime=""  }) => {
                 <p>Venue Name</p>
                 <div className='card_menu'>
 
-                    <Link href="/SingleEvent" className="btn sm">Get tickets</Link>
+                    <Link href="/sellTickets" className="btn sm">Sell tickets</Link>
                     {showMenuButton && (
                         <div className="menu_container">
                             <HiOutlineDotsHorizontal className="card_btn" onClick={toggleMenu} />

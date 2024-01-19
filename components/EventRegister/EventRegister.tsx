@@ -2,6 +2,8 @@ import Link from 'next/link'
 import React, { useState } from 'react'
 import { CiCirclePlus } from 'react-icons/ci'
 import ArchivedBack from '../ArchivedBack/ArchivedBack';
+import Image from 'next/image';
+import { Upload_img } from '@/public';
 
 
 type AgeValue = 'P' | 'A' | 'H' | null;
@@ -33,6 +35,7 @@ const EventRegister: React.FC<EventRegisterProps> = ({title = '',  label = '', h
     const selectedValue = e.target.value;
     setSelectedRadio(selectedValue);
   };
+
     return (
         <div className="Details">
             {showBackButton && <ArchivedBack />}
@@ -169,6 +172,7 @@ const EventRegister: React.FC<EventRegisterProps> = ({title = '',  label = '', h
                             <div className="event_inputs1">
                                 <input type="date" className="cursor_pointer" />
                                 <input type="time" className="cursor_pointer" />
+                                {/* <Calendar onChange={onChange} value={value} /> */}
 
                             </div>
                         </div>
@@ -294,11 +298,12 @@ const EventRegister: React.FC<EventRegisterProps> = ({title = '',  label = '', h
                     </div>
                     <div className="file_form cursor_pointer">
                         <img src="./imgs/upload 1.png" alt="" />
+                        <Image src={Upload_img} alt=''/>
                         <p>Drag and drop image here</p>
                     </div>
                     <div className="next_btn">
 
-                        <Link className="w3-bar-item w3-button tablink tab_btn cursor_pointer  "
+                        <Link className="w3-bar-item w3-button tablink tab_btnn cursor_pointer  "
                             href={href}>{label}</Link>
 
                     </div>
