@@ -14,6 +14,8 @@ import { useRouter } from 'next/router'
 const Header = () => {
     const [selectedLink, setSelectedLink] = useState('/'); // Initial selected link is '/'
     const [isOpen, setIsOpen] = useState(false);
+    const [isScrolled, setIsScrolled] = useState(false);
+
 
     const links = [
         { path: '/', text: 'Home' },
@@ -22,6 +24,19 @@ const Header = () => {
         { path: '/Login', text: 'Login', className: 'login-button pc_none' },
         { path: '/NewEvent', text: 'CREATE EVENT', className: 'li_active' },
     ];
+
+    useEffect(() => {
+        const handleScroll = () => {
+            const scrollPosition = window.scrollY;
+            setIsScrolled(scrollPosition >= 100);
+        };
+
+        window.addEventListener('scroll', handleScroll);
+
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
+        };
+    }, []);
 
     const toggleMenu = () => {
         setIsOpen(!isOpen);
@@ -38,7 +53,7 @@ const Header = () => {
 
 
     return (
-        <nav>
+        <nav className={isScrolled ? 'scrolled' : ''}>
             <Link href="/">
                 <Image src={Logo} alt='logo' className='logo_nav' />
             </Link>

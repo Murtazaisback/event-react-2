@@ -62,7 +62,7 @@ nav {
 .li_active:hover {
   font-weight: 500;
   color: transparent !important;;
-  border: 1px solid #FFE100;
+  border: 2px solid #FFE100;
 }
 
 .login-button {
@@ -125,12 +125,23 @@ nav {
     width: 214.7404px;
     height: 23.1489px;
   }
+  nav {
+    position: sticky;
+    top: 0; /* Stick the header to the top of the viewport */
+    /* background: black; */
+    width: 100vw;
+    margin: 0;
+    transition: background-color 0.3s ease;
+  }
+  nav.scrolled {
+    background-color: black; /* Change the background color when scrolled */
+  }
 
   .menu {
     display: block;
-    position: absolute;
-    top: 60px;
-    right: 0px;
+    position: fixed; /* Use fixed positioning for the menu */
+    top: 0px; 
+    /* right: 0px; */
     background-color: #131418;
     /* Set your desired background color */
     border-radius: 5px;

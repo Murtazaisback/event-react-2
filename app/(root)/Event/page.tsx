@@ -164,9 +164,9 @@ const Event = () => {
                                 </div>
                                 <div className="events_row_2">
                                     <div className="event_cards" >
-                                        <EventsCard eventDateTime="Sat, July 15, 2025 • 7:30 PM" />
-                                        <EventsCard   eventDateTime="Sat, July 15, 2025 • 7:30 PM"/>
-                                        <EventsCard   eventDateTime="Sat, July 15, 2025 • 7:30 PM"/>
+                                        <EventsCard eventDateTime="Sat, July 15, 2025 • 7:30 PM" TicketType="Sell Tickets" TicketHref='/sellTickets' />
+                                        <EventsCard   eventDateTime="Sat, July 15, 2025 • 7:30 PM" TicketType="Sell Tickets" TicketHref='/sellTickets'/>
+                                        <EventsCard   eventDateTime="Sat, July 15, 2025 • 7:30 PM" TicketType="Sell Tickets" TicketHref='/sellTickets'/>
                                     </div>
                                 </div>
                             </div>

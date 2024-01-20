@@ -6,7 +6,7 @@ import React, { useState } from 'react'
 import "./index.css"
 import { HiOutlineDotsHorizontal } from 'react-icons/hi'
 
-const EventsCard = ({ showMenuButton = true, eventDateTime=""  }) => {
+const EventsCard = ({ showMenuButton = true, eventDateTime="", TicketType="", TicketHref="" }) => {
     const [isMenuOpen, setMenuOpen] = useState(false);
 
     const toggleMenu = () => {
@@ -22,7 +22,7 @@ const EventsCard = ({ showMenuButton = true, eventDateTime=""  }) => {
                 <p>Venue Name</p>
                 <div className='card_menu'>
 
-                    <Link href="/sellTickets" className="btn sm">Sell tickets</Link>
+                    <Link href={TicketHref} className="btn sm">{TicketType}</Link>
                     {showMenuButton && (
                         <div className="menu_container">
                             <HiOutlineDotsHorizontal className="card_btn" onClick={toggleMenu} />

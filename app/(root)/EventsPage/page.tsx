@@ -40,14 +40,14 @@ const EventsPage = () => {
                     <h2>Upcoming Events</h2>
                     <div className="events_row_2">
                         <div className="event_cards" >
-                            <EventsCard  showMenuButton={false} eventDateTime="Sat, July 15, 2025 • 7:30 PM"/>
-                            <EventsCard  showMenuButton={false} eventDateTime="Sat, July 15, 2025 • 7:30 PM"/>
-                            <EventsCard  showMenuButton={false} eventDateTime="Sat, July 15, 2025 • 7:30 PM"/>
-                            <EventsCard  showMenuButton={false} eventDateTime="Sat, July 15, 2025 • 7:30 PM"/>
-                            <EventsCard  showMenuButton={false} eventDateTime="Sat, July 15, 2025 • 7:30 PM"/>
-                            <EventsCard  showMenuButton={false} eventDateTime="Sat, July 15, 2025 • 7:30 PM"/>
-                            <EventsCard  showMenuButton={false} eventDateTime="Sat, July 15, 2025 • 7:30 PM"/>
-                            <EventsCard  showMenuButton={false} eventDateTime="Sat, July 15, 2025 • 7:30 PM"/>
+                            <EventsCard  showMenuButton={false} eventDateTime="Sat, July 15, 2025 • 7:30 PM" TicketType="Get Tickets" TicketHref="/SingleEvent"/>
+                            <EventsCard  showMenuButton={false} eventDateTime="Sat, July 15, 2025 • 7:30 PM" TicketType="Get Tickets" TicketHref="/SingleEvent"/>
+                            <EventsCard  showMenuButton={false} eventDateTime="Sat, July 15, 2025 • 7:30 PM" TicketType="Get Tickets" TicketHref="/SingleEvent"/>
+                            <EventsCard  showMenuButton={false} eventDateTime="Sat, July 15, 2025 • 7:30 PM" TicketType="Get Tickets" TicketHref="/SingleEvent"/>
+                            <EventsCard  showMenuButton={false} eventDateTime="Sat, July 15, 2025 • 7:30 PM" TicketType="Get Tickets" TicketHref="/SingleEvent"/>
+                            <EventsCard  showMenuButton={false} eventDateTime="Sat, July 15, 2025 • 7:30 PM" TicketType="Get Tickets" TicketHref="/SingleEvent"/>
+                            <EventsCard  showMenuButton={false} eventDateTime="Sat, July 15, 2025 • 7:30 PM" TicketType="Get Tickets" TicketHref="/SingleEvent"/>
+                            <EventsCard  showMenuButton={false} eventDateTime="Sat, July 15, 2025 • 7:30 PM" TicketType="Get Tickets" TicketHref="/SingleEvent"/>
                         </div>
                     </div>
                     <section className="pagination">
