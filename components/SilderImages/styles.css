@@ -35,3 +35,14 @@
  .mobile_imgs  {
   margin-top: 20px;
  }
+ .imags_box{
+  width: 47%;
+}
+
+
+@media screen and (max-width: 1024px) {
+  .imags_box{
+      width: 100% !important;
+  }
+
+}

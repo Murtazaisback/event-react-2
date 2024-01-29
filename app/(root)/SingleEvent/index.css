@@ -145,6 +145,8 @@ box-shadow: 2px 2px 4px 0px rgba(75, 75, 75, 0.75), 4px 4px 4px 0px rgba(71, 71,
     /* align-items: center; */
     width: 90%;
     margin-top: 0;
+    height: 95vh;
+    box-shadow: 0px 0px 40px 0px rgba(226,214,38,0.22);
 
 }
 
@@ -325,6 +327,7 @@ box-shadow: 2px 2px 4px 0px rgba(75, 75, 75, 0.75), 4px 4px 4px 0px rgba(71, 71,
         width: 90%;
         padding: 10px;
         display: flex;
+        height: auto;
     }
     .res_triangle{
         width: 100%;

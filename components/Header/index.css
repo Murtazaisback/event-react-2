@@ -56,13 +56,15 @@ nav {
   background: linear-gradient(90deg, rgba(190, 158, 68, 1) 0%, rgba(216, 198, 144, 1) 100%);
   color: #000 !important;
   transition: all ease-in-out 0.25s !important;
+  border: 2px solid ;
+  border-color: transparent;
 } 
 
 
 .li_active:hover {
   font-weight: 500;
   color: transparent !important;;
-  border: 2px solid #FFE100;
+  border-color: #FFE100;
 }
 
 .login-button {

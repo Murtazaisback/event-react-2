@@ -132,7 +132,7 @@ const ShareEvent = () => {
                                     </div>
                                     <div className="share_btns">
                                         <a className="w3-bar-item w3-button tablink w3-red tab_btn new_envet_btn" href="/NewEvent">Create a New Event</a>
-                                        <a href="/Event" className="publish_btn">Done</a>
+                                        <a href="/Event" className="tab_btnn">Done</a>
 
                                     </div>
                                 </div>

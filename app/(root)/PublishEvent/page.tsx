@@ -105,7 +105,7 @@ const PublishEvent = () => {
 
                                         <div className="publish_btns">
                                             <a className="save_btn" href=''>Save Draft</a>
-                                            <a className="w3-bar-item w3-button tablink tab_btn publish_btn" href="/ShareEvent">Publish</a>
+                                            <a className="tablink tab_btnn " href="/ShareEvent">Publish</a>
                                         </div>
                                     </div>
                                 </div>

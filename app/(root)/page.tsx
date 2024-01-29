@@ -1,7 +1,7 @@
 'use client'
 import React, { useEffect, useState, useRef } from 'react';
 import Image from 'next/image'
-import { Des_1, Des_2, Des_3, Ellispse, Hero_img, Landingmain } from '../../public'
+import { Dawn_img, Des_1, Des_2, Des_3, Ellispse, Hero_img, Landingmain } from '../../public'
 import Link from 'next/link'
 import { FaCheck } from "react-icons/fa";
 import { FaXmark } from "react-icons/fa6";
@@ -110,6 +110,7 @@ export default function Home() {
 
         <div className="show_section">
           <div className="mid_effect"></div>
+          {/* <h2 className='show_title'>TAKE OFF YOUR EVENTS</h2> */}
           <div className="show_container">
 
             <SilderImages />
@@ -121,9 +122,10 @@ export default function Home() {
               initial={{ opacity: 0, x: 100 }}  // Starts off screen to the left
               animate={{ opacity: inView2 ? 1 : 0, x: inView2 ? 0 : 100 }}  // Slide in when in view
               transition={{ duration: 0.5 }}
+              className='info_imagse_box'
             >
               <div className="show_info" >
-                <h2 className='res_none'>Create your events with ease.</h2>
+                <h2 className=''>Create your events with ease.</h2>
                 <p>Need reserved seating for <br />your event? Not a <br />problem.</p>
                 <p>Use our built-in designer to <br /> customize your seating chart and  <br /> allow customers to select their<br />seats at checkout</p>
               </div>
@@ -191,6 +193,18 @@ export default function Home() {
               </table>
             </div>
           </div>
+        </motion.div>
+        <motion.div className='about_main_box'>
+          <div className='about_info_main'>
+            <h3>More Awesome Tools Coming Soon</h3>
+            <ul>
+              <li>Global Event Analytics to help estimate number of ticket sales, recommended ticket prices, and more</li>
+              <li>SMS Campaigns</li>
+            </ul>
+
+          </div>
+          <Image className='about_img_main' src={Dawn_img} alt=''/>
+
         </motion.div>
 
 

@@ -143,9 +143,18 @@ const Event = () => {
 
                                         </div>
                                         <div className="icons">
-                                            <FaFacebookF className="share_icon_i" />
-                                            <FaLinkedin className="share_icon_i" />
+                                            <a href="https://www.facebook.com/profile.php?id=61554004420226">
+
+                                            <FaFacebookF className="share_icon_i" target='_blank'/>
+                                            </a>
+                                            <a href="https://www.instagram.com/eventvisionary/?igshid=MzMyNGUyNmU2YQ%3D%3D">
+
+                                            <FaLinkedin className="share_icon_i" target='_blank'/>
+                                            </a>
+                                            <a href="https://twitter.com/EventVisionary" target='_blank'>
+
                                             <FaTwitter className="share_icon_i" />
+                                            </a>
                                         </div>
                                     </div>
                                     <div className='new_event_list_wap'>

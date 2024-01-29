@@ -20,7 +20,11 @@ import SellTick_img from './Designer - Section 1.png'
 import TicketPF_Img from './EV logo no background 1.png'
 import Events_imgs from "./Rectangle 121.png"
 
+import Pexel_imgg from './pexels-jack-gittoes-761543 2.png'
 import Upload_img from './upload 1.png'
+import Mulitple from './Designer - Multiple floors 1.png'
+import General_img from './Designer - General Admission inspector 1.png'
+import Dawn_img from './pexels-dawn-lio-2177814 1.png'
 
 
 export{
@@ -46,4 +50,10 @@ export{
     TicketPF_Img,
     Events_imgs,
     Upload_img,
+    Pexel_imgg,
+    Mulitple,
+    General_img,
+    Dawn_img,
+    
+    
 }

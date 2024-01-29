@@ -136,7 +136,12 @@ const EventRegister: React.FC<EventRegisterProps> = ({title = '',  label = '', h
                                             <div className="sub_vi">
 
                                                 <label htmlFor=""> State</label>
-                                                <input type="text" />
+                                                <select name="" id="">
+                                                    <option value="" selected>delaware</option>
+                                                    <option value="">LA</option>
+                                                    <option value="">Utha</option>
+                                                    <option value="">NYC</option>
+                                                </select>
                                             </div>
 
                                         </div>
@@ -149,7 +154,11 @@ const EventRegister: React.FC<EventRegisterProps> = ({title = '',  label = '', h
                                             <div className="sub_vi">
 
                                                 <label htmlFor=""> Country</label>
-                                                <input type="text" />
+                                                <select name="" id="">
+                                                    <option value="" selected>united states</option>
+                                                    <option value="">united Kingdom</option>
+                                                    <option value="">Saudi Arabia</option>
+                                                </select>
                                             </div>
 
                                         </div>
