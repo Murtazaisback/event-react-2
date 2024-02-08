@@ -345,12 +345,13 @@ body {
     padding: 10px;
     background: linear-gradient(90deg, rgba(190,158,68,1) 0%, rgba(216,198,144,1) 100%);
     color: #000;
+    border: 1px solid;
 }
 
 .li_active:hover {
     background: var(--color-yellow);
     color: #000 !important;
-    border: 2px solid #be9e44 !important;
+    border: 1px solid #be9e44 !important;
 }
 
 
@@ -948,7 +949,7 @@ box-shadow: 2px 2px 4px 0px #212121 inset, -2px -2px 4px 0px #25251F inset, 10px
 }
 .tab_btnn {
     background: transparent;
-    color: white;
+    color: black;
     padding: 10px 15px;
     /* border: 1px solid white; */
     outline: none !important;
@@ -956,6 +957,7 @@ box-shadow: 2px 2px 4px 0px #212121 inset, -2px -2px 4px 0px #25251F inset, 10px
     position: relative;
     cursor: pointer;
     border: 1px solid #be9e44;
+    background: linear-gradient(90deg, rgba(190, 158, 68, 1) 0%, rgba(216, 198, 144, 1) 100%);
     
 }
 
@@ -4569,7 +4571,7 @@ input:checked+.slider:before {
     width: 250px;
     background: transparent;
     z-index: 100;
-    transition: all 0s ease;
+    transition: all 0.25s ease;
     padding: 10px;
     position: relative;
 }
@@ -6493,8 +6495,12 @@ input:checked+.slider:before {
 }
 
 .yellow_m {
-    color: var(--color-yellow) !important;
-    fill: var(--color-yellow) !important;
+    /* color: var(--color-yellow) ; */
+    color: transparent !important;;
+    font-weight: 600 !important;
+    fill: var(--color-yellow) ;
+    background-clip: text !important;
+    background: linear-gradient(90deg, rgba(190,158,68,1) 0%, rgba(216,198,144,1) 100%);
 }
 .hidden {
     display: none;

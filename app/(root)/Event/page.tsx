@@ -10,6 +10,7 @@ import { RiMoneyDollarCircleLine } from 'react-icons/ri'
 import { SlLocationPin } from 'react-icons/sl'
 import './index.css'
 import EventsCard from '@/components/EventsCard/EventsCard'
+import { EventImg, One_img } from '@/public'
 
 const Event = () => {
     const [isMainOpen, setIsMainOpen] = useState(false);
@@ -173,9 +174,9 @@ const Event = () => {
                                 </div>
                                 <div className="events_row_2">
                                     <div className="event_cards" >
-                                        <EventsCard eventDateTime="Sat, July 15, 2025 • 7:30 PM" TicketType="Sell Tickets" TicketHref='/sellTickets' />
-                                        <EventsCard   eventDateTime="Sat, July 15, 2025 • 7:30 PM" TicketType="Sell Tickets" TicketHref='/sellTickets'/>
-                                        <EventsCard   eventDateTime="Sat, July 15, 2025 • 7:30 PM" TicketType="Sell Tickets" TicketHref='/sellTickets'/>
+                                        <EventsCard imge={One_img} eventDateTime="Sat, July 15, 2025 • 7:30 PM" TicketType="Sell Tickets" TicketHref='/sellTickets' />
+                                        <EventsCard imge={EventImg}  eventDateTime="Sat, July 15, 2025 • 7:30 PM" TicketType="Sell Tickets" TicketHref='/sellTickets'/>
+                                        <EventsCard imge={One_img}  eventDateTime="Sat, July 15, 2025 • 7:30 PM" TicketType="Sell Tickets" TicketHref='/sellTickets'/>
                                     </div>
                                 </div>
                             </div>

@@ -1,21 +1,27 @@
 'use client'
-import { Rectangle } from '@/public'
+import { One_img, Rectangle } from '@/public'
 import Image from 'next/image'
 import Link from 'next/link'
 import React, { useState } from 'react'
 import "./index.css"
 import { HiOutlineDotsHorizontal } from 'react-icons/hi'
 
-const EventsCard = ({ showMenuButton = true, eventDateTime="", TicketType="", TicketHref="" }) => {
+interface YourComponentProps {
+    imge: string; 
+    showMenuButton?: boolean;
+    eventDateTime?: string;
+    TicketType?: string;
+    TicketHref?: string;
+}
+const EventsCard: React.FC<YourComponentProps> = ({ showMenuButton = true, eventDateTime="", TicketType="", TicketHref="", imge }) => {
     const [isMenuOpen, setMenuOpen] = useState(false);
 
     const toggleMenu = () => {
         setMenuOpen(!isMenuOpen);
     };
-
     return (
         <div className="event_card">
-            <Image src={Rectangle} alt='' className='event_card_img' width={270} height={270}/>
+            <Image src={imge} alt='' className='event_card_img' width={270} height={270}/>
             <div className="card_info">
                 <p>Event Title</p>
                 <p>{eventDateTime}</p>

@@ -7,6 +7,7 @@ import { GoGear } from "react-icons/go";
 
 import "./index.css"
 import EventsCard from '@/components/EventsCard/EventsCard';
+import { EventImg, One_img } from '@/public';
 
 const CustomerAccount = () => {
     return (
@@ -69,17 +70,17 @@ const CustomerAccount = () => {
                                         <div className="event_like">
                                             <h3>Events You Might Like</h3>
                                             <div className="evet_rows">
-                                                <EventsCard showMenuButton={false}/>
-                                                <EventsCard showMenuButton={false}/>
-                                                <EventsCard showMenuButton={false}/>
+                                                <EventsCard imge={One_img} showMenuButton={false}/>
+                                                <EventsCard imge={EventImg} showMenuButton={false}/>
+                                                <EventsCard imge={EventImg} showMenuButton={false}/>
                                             </div>
                                         </div>
                                         <div className="event_Organizer">
                                             <h3>More Events By " Event Organizer "</h3>
                                             <div className="evet_rows">
-                                                <EventsCard showMenuButton={false}/>
-                                                <EventsCard showMenuButton={false}/>
-                                                <EventsCard showMenuButton={false}/>
+                                                <EventsCard imge={One_img} showMenuButton={false}/>
+                                                <EventsCard imge={EventImg} showMenuButton={false}/>
+                                                <EventsCard imge={One_img} showMenuButton={false}/>
                                             </div>
                                         </div>
                                     </div>
