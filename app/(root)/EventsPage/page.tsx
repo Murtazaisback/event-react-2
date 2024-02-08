@@ -31,9 +31,9 @@ const EventsPage = () => {
                         </select>
                         {/* <i className='bx bx-search' ></i> */}
                     </div>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="22" viewBox="0 0 24 22" fill="none">
-                            <path d="M23.0246 19.8883L16.8371 14.8633C19.3871 11.3758 19.1246 6.38828 15.9371 3.23828C14.2496 1.55078 11.9996 0.613281 9.59961 0.613281C7.19961 0.613281 4.94961 1.55078 3.26211 3.23828C-0.225391 6.72578 -0.225391 12.4258 3.26211 15.9133C4.94961 17.6008 7.19961 18.5383 9.59961 18.5383C11.8871 18.5383 14.0246 17.6758 15.7121 16.1383L21.9746 21.2008C22.1246 21.3133 22.3121 21.3883 22.4996 21.3883C22.7621 21.3883 22.9871 21.2758 23.1371 21.0883C23.4371 20.7133 23.3996 20.1883 23.0246 19.8883ZM9.59961 16.8508C7.64961 16.8508 5.84961 16.1008 4.46211 14.7133C1.61211 11.8633 1.61211 7.25078 4.46211 4.43828C5.84961 3.05078 7.64961 2.30078 9.59961 2.30078C11.5496 2.30078 13.3496 3.05078 14.7371 4.43828C17.5871 7.28828 17.5871 11.9008 14.7371 14.7133C13.3871 16.1008 11.5496 16.8508 9.59961 16.8508Z" fill="#262626" />
-                        </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="22" viewBox="0 0 24 22" fill="none">
+                        <path d="M23.0246 19.8883L16.8371 14.8633C19.3871 11.3758 19.1246 6.38828 15.9371 3.23828C14.2496 1.55078 11.9996 0.613281 9.59961 0.613281C7.19961 0.613281 4.94961 1.55078 3.26211 3.23828C-0.225391 6.72578 -0.225391 12.4258 3.26211 15.9133C4.94961 17.6008 7.19961 18.5383 9.59961 18.5383C11.8871 18.5383 14.0246 17.6758 15.7121 16.1383L21.9746 21.2008C22.1246 21.3133 22.3121 21.3883 22.4996 21.3883C22.7621 21.3883 22.9871 21.2758 23.1371 21.0883C23.4371 20.7133 23.3996 20.1883 23.0246 19.8883ZM9.59961 16.8508C7.64961 16.8508 5.84961 16.1008 4.46211 14.7133C1.61211 11.8633 1.61211 7.25078 4.46211 4.43828C5.84961 3.05078 7.64961 2.30078 9.59961 2.30078C11.5496 2.30078 13.3496 3.05078 14.7371 4.43828C17.5871 7.28828 17.5871 11.9008 14.7371 14.7133C13.3871 16.1008 11.5496 16.8508 9.59961 16.8508Z" fill="#262626" />
+                    </svg>
                 </form>
 
                 <div className="container_eventpage">
@@ -41,15 +41,15 @@ const EventsPage = () => {
                     <h2>Upcoming Events</h2>
                     <div className="events_row_2">
                         <div className="event_cards" >
-                            
-                            <EventsCard  imge={One_img} showMenuButton={false} eventDateTime="Sat, July 15, 2025 • 7:30 PM" TicketType="Get Tickets" TicketHref="/SingleEvent"/>
-                            <EventsCard  imge={Rectangle} showMenuButton={false} eventDateTime="Sat, July 15, 2025 • 7:30 PM" TicketType="Get Tickets" TicketHref="/SingleEvent"/>
-                            <EventsCard  imge={EventImg} showMenuButton={false} eventDateTime="Sat, July 15, 2025 • 7:30 PM" TicketType="Get Tickets" TicketHref="/SingleEvent"/>
-                            <EventsCard  imge={One_img} showMenuButton={false} eventDateTime="Sat, July 15, 2025 • 7:30 PM" TicketType="Get Tickets" TicketHref="/SingleEvent"/>
-                            <EventsCard  imge={One_img} showMenuButton={false} eventDateTime="Sat, July 15, 2025 • 7:30 PM" TicketType="Get Tickets" TicketHref="/SingleEvent"/>
-                            <EventsCard  imge={EventImg} showMenuButton={false} eventDateTime="Sat, July 15, 2025 • 7:30 PM" TicketType="Get Tickets" TicketHref="/SingleEvent"/>
-                            <EventsCard  imge={One_img} showMenuButton={false} eventDateTime="Sat, July 15, 2025 • 7:30 PM" TicketType="Get Tickets" TicketHref="/SingleEvent"/>
-                            <EventsCard  imge={EventImg} showMenuButton={false} eventDateTime="Sat, July 15, 2025 • 7:30 PM" TicketType="Get Tickets" TicketHref="/SingleEvent"/>
+
+                            <EventsCard imge={One_img} showMenuButton={false} eventDateTime="Sat, July 15, 2025 • 7:30 PM" TicketType="Get Tickets" TicketHref="/SingleEvent" />
+                            <EventsCard imge={Rectangle} showMenuButton={false} eventDateTime="Sat, July 15, 2025 • 7:30 PM" TicketType="Get Tickets" TicketHref="/SingleEvent" />
+                            <EventsCard imge={EventImg} showMenuButton={false} eventDateTime="Sat, July 15, 2025 • 7:30 PM" TicketType="Get Tickets" TicketHref="/SingleEvent" />
+                            <EventsCard imge={One_img} showMenuButton={false} eventDateTime="Sat, July 15, 2025 • 7:30 PM" TicketType="Get Tickets" TicketHref="/SingleEvent" />
+                            <EventsCard imge={One_img} showMenuButton={false} eventDateTime="Sat, July 15, 2025 • 7:30 PM" TicketType="Get Tickets" TicketHref="/SingleEvent" />
+                            <EventsCard imge={EventImg} showMenuButton={false} eventDateTime="Sat, July 15, 2025 • 7:30 PM" TicketType="Get Tickets" TicketHref="/SingleEvent" />
+                            <EventsCard imge={One_img} showMenuButton={false} eventDateTime="Sat, July 15, 2025 • 7:30 PM" TicketType="Get Tickets" TicketHref="/SingleEvent" />
+                            <EventsCard imge={EventImg} showMenuButton={false} eventDateTime="Sat, July 15, 2025 • 7:30 PM" TicketType="Get Tickets" TicketHref="/SingleEvent" />
                         </div>
                     </div>
                     <section className="pagination">

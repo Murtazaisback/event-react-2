@@ -1,19 +1,19 @@
 'use client'
 import { One_img, Rectangle } from '@/public'
-import Image from 'next/image'
+import Image, { StaticImageData } from 'next/image'
 import Link from 'next/link'
 import React, { useState } from 'react'
 import "./index.css"
 import { HiOutlineDotsHorizontal } from 'react-icons/hi'
 
-interface YourComponentProps {
-    imge: string; 
+interface EventsCardProps {
+    imge: StaticImageData;
     showMenuButton?: boolean;
     eventDateTime?: string;
     TicketType?: string;
     TicketHref?: string;
 }
-const EventsCard: React.FC<YourComponentProps> = ({ showMenuButton = true, eventDateTime="", TicketType="", TicketHref="", imge }) => {
+const EventsCard: React.FC<EventsCardProps> = ({ showMenuButton = true, eventDateTime="", TicketType="", TicketHref="", imge }) => {
     const [isMenuOpen, setMenuOpen] = useState(false);
 
     const toggleMenu = () => {
@@ -21,7 +21,7 @@ const EventsCard: React.FC<YourComponentProps> = ({ showMenuButton = true, event
     };
     return (
         <div className="event_card">
-            <Image src={imge} alt='' className='event_card_img' width={270} height={270}/>
+            <Image src={imge}alt='' className='event_card_img' width={270} height={270}/>
             <div className="card_info">
                 <p>Event Title</p>
                 <p>{eventDateTime}</p>
