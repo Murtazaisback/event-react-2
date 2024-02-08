@@ -243,7 +243,7 @@ const SingleEvent = () => {
                                                         <a className="" href="#popup14">Back</a>
 
                                                     </div>
-                                                    <a className="btn" href="#popup16">Sell Tickets</a>
+                                                    <a className="btn" href="#popup16">Get Tickets</a>
                                                 </div>
                                             </div>
 
