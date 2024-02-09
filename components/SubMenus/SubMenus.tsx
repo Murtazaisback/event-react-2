@@ -22,12 +22,14 @@ const SubMenus = () => {
     <div className="iocn-link">
       <div className="inner_nav_links " id="">
         <div className="flex_option_row accordion">
+        <Link href="/Event">
+                  <FaRegCalendarAlt className="menu_dash_i" />
+                  </Link>
           <div className="Event_Title  ">
             <div className=" inner_flex">
               <Link href="/Event">
 
 
-                  <FaRegCalendarAlt className="menu_dash_i menu_dash_u" />
                 EVENTS
               </Link>
             </div>
