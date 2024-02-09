@@ -166,6 +166,7 @@ nav {
     cursor: pointer;
     transition: color 0.5s ease;
     /* Add transition for text color */
+    z-index: 1000;
   }
 
   .menu-btn span {
@@ -175,6 +176,7 @@ nav {
     margin-bottom: 4px;
     /* background-color: #333; */
     transition: transform 0.5s ease;
+    z-index: 100;
   }
 
   .menu-btn.open span:nth-child(1) {
@@ -203,7 +205,7 @@ nav {
     /* height: 100%; */
     opacity: 1;
     visibility: visible;
-    width: 100%;
+    width: 95%;
 
   }
 

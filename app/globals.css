@@ -5,7 +5,7 @@
   --tran-03: all 0.3s ease;
   --tran-04: all 0.3s ease;
   --tran-05: all 0.3s ease;
-
+  --color-yellow2: linear-gradient(90deg, rgba(190,158,68,1) 0%, rgba(216,198,144,1) 100%);
 }
 .green{
   color: #52ff00 !important;
@@ -683,9 +683,13 @@ footer {
 
 
 .footer_info_follow b {
-    color: white;
-    font-weight: 400;
+    color: transparent !important;
+    background-clip: text !important;
+    background: var(--color-yellow2);
+    font-size: 19px;
+    font-weight: 600;
     margin-bottom: 20px;
+
 }
 
 
@@ -4989,6 +4993,19 @@ input:checked+.slider:before {
    cursor: pointer;
    transition: all 0.3s ease;
 }
+.menu_dash_u{
+    min-width: 25px;
+   max-height: 25px;
+   margin-top: 0px;
+   margin-right: 15px;
+   margin-left: 10px;
+   text-align: center;
+   line-height: 50px;
+   color: #fff;
+   font-size: 25px;
+   cursor: pointer;
+   transition: all 0.3s ease;
+}
 .Exinner_flex{
    margin-top: 3px !important;
    /* gap: 65px !important; */
@@ -6496,13 +6513,15 @@ input:checked+.slider:before {
 }
 
 .yellow_m {
-    /* color: var(--color-yellow) ; */
     color: transparent !important;;
     font-weight: 600 !important;
-    fill: var(--color-yellow) ;
     background-clip: text !important;
-    background: linear-gradient(90deg, rgba(190,158,68,1) 0%, rgba(216,198,144,1) 100%);
+    -webkit-background-clip: text !important;
+    background: linear-gradient(90deg, rgba(190,158,68,1) 0%, rgba(216,198,144,1) 100%) ;
+    display: inline-block;
+    fill: #cbb26a !important;
 }
+
 .hidden {
     display: none;
   }

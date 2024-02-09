@@ -24,7 +24,7 @@ const Dashboard = () => {
                             <li>
                                 <Link href="/Dashboard">
 
-                                    <IoSpeedometerOutline className="menu_dash_i" style={{color: "FFE100"}} />
+                                    <IoSpeedometerOutline className="menu_dash_i" style={{color: "#cbb26a"}} />
                                     <span className="link_name yellow_m">Dashboard</span>
                                 </Link>
                             </li>

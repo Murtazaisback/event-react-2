@@ -5,7 +5,7 @@ import { FaRegCalendarAlt, FaChevronDown, FaArrowLeft, FaArrowRight } from 'reac
 import './index.css'
 
 const SubMenus = () => {
-  
+
   const [isMainOpen, setIsMainOpen] = useState(false);
   const [isEventOpen, setIsEventOpen] = useState(false);
 
@@ -16,16 +16,18 @@ const SubMenus = () => {
   const toggleEvent = () => {
     setIsEventOpen(!isEventOpen);
   };
+  
   return (
+
     <div className="iocn-link">
       <div className="inner_nav_links " id="">
         <div className="flex_option_row accordion">
-
-          <FaRegCalendarAlt className="menu_dash_i" />
           <div className="Event_Title  ">
             <div className=" inner_flex">
               <Link href="/Event">
 
+
+                  <FaRegCalendarAlt className="menu_dash_i menu_dash_u" />
                 EVENTS
               </Link>
             </div>
