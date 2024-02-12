@@ -251,11 +251,11 @@ const SingleEvent = () => {
 
                                     </div>
 
-                                    <div className="get_ticket_cart">
                                         <a className="jclose" href="#">
                                             <RiCloseFill color="#FAE100" className="Xmarks" />
 
                                         </a>
+                                    <div className="get_ticket_cart">
                                         <a className="fclose pc_none" href="#popup14">
                                         <IoIosArrowBack />
                                         </a>
