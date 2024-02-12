@@ -24,8 +24,8 @@ const SettingChartCom: React.FC<SettingChartComProps> = ({title = '',  label = '
                 </div>
 
             </div>
-            <div className="tiktct_mbtns">
-                <button>Publish Changes</button>
+            <div className="pub_btn">
+                <button className='btn'>Publish Changes</button>
             </div>
         </div>
     )

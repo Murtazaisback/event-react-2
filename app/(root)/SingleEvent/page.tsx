@@ -1,4 +1,4 @@
-import { EventImg, Mine_logo, Render } from '@/public'
+import { EventImg, Logo, Mine_logo, Render } from '@/public'
 import Image from 'next/image'
 import React from 'react'
 
@@ -429,9 +429,9 @@ const SingleEvent = () => {
                                             </a>
                                         </div>
                                         <div className="logo_form res_none">
-                                            <p>Powered by Event Visionary. </p>
+                                            {/* <p>Powered by Event Visionary. </p> */}
                                             {/* <img src="./imgs/4736150369408c50504a5b1df6f6db67.png" alt=""/> */}
-                                            <Image src={Mine_logo} alt='' className='popup_logo' />
+                                            <Image src={Logo} alt='' className='popup_logo' />
                                         </div>
 
                                     </div>
