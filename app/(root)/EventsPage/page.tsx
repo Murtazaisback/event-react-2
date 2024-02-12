@@ -43,7 +43,7 @@ const EventsPage = () => {
                         <div className="event_cards" >
 
                             <EventsCard imge={One_img} showMenuButton={false} eventDateTime="Sat, July 15, 2025 • 7:30 PM" TicketType="Get Tickets" TicketHref="/SingleEvent" />
-                            <EventsCard imge={Rectangle} showMenuButton={false} eventDateTime="Sat, July 15, 2025 • 7:30 PM" TicketType="Get Tickets" TicketHref="/SingleEvent" />
+                            <EventsCard imge={EventImg} showMenuButton={false} eventDateTime="Sat, July 15, 2025 • 7:30 PM" TicketType="Get Tickets" TicketHref="/SingleEvent" />
                             <EventsCard imge={EventImg} showMenuButton={false} eventDateTime="Sat, July 15, 2025 • 7:30 PM" TicketType="Get Tickets" TicketHref="/SingleEvent" />
                             <EventsCard imge={One_img} showMenuButton={false} eventDateTime="Sat, July 15, 2025 • 7:30 PM" TicketType="Get Tickets" TicketHref="/SingleEvent" />
                             <EventsCard imge={One_img} showMenuButton={false} eventDateTime="Sat, July 15, 2025 • 7:30 PM" TicketType="Get Tickets" TicketHref="/SingleEvent" />

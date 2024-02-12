@@ -12,6 +12,7 @@ import { BsShare } from 'react-icons/bs';
 import '../../../public/Renderer Desktop - Stadium 2.png'
 import { IoIosArrowBack } from 'react-icons/io'
 import SellTicketPop from '@/components/SellTicketPop/SellTicketPop'
+import PopupBox from '@/components/Popup/Popup'
 
 const SingleEvent = () => {
     return (
@@ -560,6 +561,8 @@ const SingleEvent = () => {
                             </div>
                         </div>
                     </div>
+                    {/* <PopupBox/> */}
+                    
                 </div>
             </div>
         </div>
