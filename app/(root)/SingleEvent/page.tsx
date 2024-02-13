@@ -70,7 +70,8 @@ const SingleEvent = () => {
 
                                     <div className="get_ticket_cart ">
 
-                                        <div className="get_ticket_carti"></div>
+                                        {/* <div className="get_ticket_carti"></div> */}
+                                        <Image src={EventImg} alt='' className='get_ticket_carti'/>
                                         <div className="cart_ticker">
                                             <h2>Cart</h2>
                                             <div className="order_sum_text">
@@ -256,10 +257,10 @@ const SingleEvent = () => {
                                             <RiCloseFill color="#FAE100" className="Xmarks" />
 
                                         </a>
-                                    <div className="get_ticket_cart">
                                         <a className="fclose pc_none" href="#popup14">
                                         <IoIosArrowBack />
                                         </a>
+                                    <div className="get_ticket_cart">
                                         <div className="get_ticket_overi pc_none">
 
                                             <h1>Event Title</h1>
