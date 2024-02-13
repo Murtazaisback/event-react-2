@@ -332,10 +332,12 @@ box-shadow: 2px 2px 4px 0px rgba(75, 75, 75, 0.75), 4px 4px 4px 0px rgba(71, 71,
         margin-top: 100px;
         align-items: center;
         gap: 20px;
-        width: 90%;
+        width: 100%;
         padding: 10px;
         display: flex;
         height: auto;
+        margin: 0;
+        box-shadow: none !important;
     }
     .res_triangle{
         width: 100%;
@@ -402,6 +404,7 @@ box-shadow: 2px 2px 4px 0px rgba(75, 75, 75, 0.75), 4px 4px 4px 0px rgba(71, 71,
     .overlay {
         background: #000000a4;
         width: 100%;
+        top: -10px;
     }
 
     .organized_by {

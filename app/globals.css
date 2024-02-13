@@ -5718,7 +5718,11 @@ height: 45px;
 
     .overlay {
         background: #000000a4;
-        width: 100%;
+        width: 100vw !important;
+        top: -50px !important;
+        left: -28px !important;
+        z-index: 10000;
+        
     }
 
     .organized_by {

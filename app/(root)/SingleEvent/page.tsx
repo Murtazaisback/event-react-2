@@ -561,6 +561,7 @@ const SingleEvent = () => {
                             </div>
                         </div>
                     </div>
+                    
                     {/* <PopupBox/> */}
                     
                 </div>
