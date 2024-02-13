@@ -321,6 +321,9 @@ box-shadow: 2px 2px 4px 0px rgba(75, 75, 75, 0.75), 4px 4px 4px 0px rgba(71, 71,
 }
 
 @media screen and (max-width: 768px) {
+    .single_event_share{
+        padding: 30px 10px;
+    }
     .single_event_img {
         width: 80%;
     }
