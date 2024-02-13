@@ -126,7 +126,7 @@ const SellTicketsCom: React.FC<CustomComponentProps> = ({ title = "", showBackBu
                     <div className="box">
                         <a className="btn main_sell_btn" href="#popup1">Checkout</a>
                     </div>
-                    <div id="popup1" className="overlay">
+                    <div id="popup1" className="overlay2">
                         <div className="popup">
                             <div className="info_form_section">
                                 <h2>Enter Payment Information and Confirm Purchase</h2>
