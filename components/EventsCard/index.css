@@ -1,7 +1,7 @@
 .event_card {
     border-radius: 10px;
     transition: all ease-in-out 0.35s;
-
+    width: 265px;
 }
 
 .event_card:hover {
