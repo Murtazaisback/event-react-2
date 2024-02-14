@@ -326,6 +326,7 @@ box-shadow: 2px 2px 4px 0px rgba(75, 75, 75, 0.75), 4px 4px 4px 0px rgba(71, 71,
         /* height: 10; */
         height: 300px;
         margin-left: 0;
+        border-radius: 10px;
         
     }
     .get_ticket_overi{

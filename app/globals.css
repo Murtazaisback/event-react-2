@@ -466,7 +466,7 @@ body {
 
 .sm {
     padding: 10px;
-    font-size: 13px !important;
+    font-size: 18px !important;
     background: #be9e44;
 }
 
@@ -1836,6 +1836,7 @@ input:checked+.slider:before {
 .order_summary_data {
     display: flex;
     gap: 10px;
+    /* justify-content: space-between; */
 }
 
 .order_tinfo {
@@ -3834,6 +3835,7 @@ height: 27px;
     display: flex;
     align-items: center;
     justify-content: center;
+    box-shadow: 0px 0px 40px 0px rgba(226,214,38,0.22);
 }
 
 .sticky_inner2 {
@@ -3846,9 +3848,12 @@ height: 27px;
 }
 
 .price_lable label {
-    font-size: 11px;
+    font-size: 14px;
 
     color: #D9D9D9;
+}
+.price_lable p{
+    font-size: 19px;
 }
 
 .pc_none {
@@ -5146,6 +5151,12 @@ height: 27px;
 
 /*Stying for small screens*/
 @media screen and (max-width: 860px) {
+    .order_sum_text {
+        width: 100%;
+    }
+    .order_summary_data{
+        justify-content: space-between;
+    }
    
     .event_dash_link{
         flex-direction: column;
