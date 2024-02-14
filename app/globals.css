@@ -3008,12 +3008,16 @@ input:checked+.slider:before {
     align-items: center;
     gap: 10px;
     margin-left: 30px;
+    margin-bottom: 20px;
+}
+.logo_form p{
+    font-size: 19px;
 }
 
 .popup_logo{
 
-width: 370px;
-height: 45px;
+width: 220px;
+height: 27px;
 }
 
 .bx-share-alt {

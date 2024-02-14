@@ -433,6 +433,7 @@ const SingleEvent = () => {
                                         <div className="logo_form res_none">
                                             {/* <p>Powered by Event Visionary. </p> */}
                                             {/* <img src="./imgs/4736150369408c50504a5b1df6f6db67.png" alt=""/> */}
+                                            <p>Powered by</p>
                                             <Image src={Logo} alt='' className='popup_logo' />
                                         </div>
 
