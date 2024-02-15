@@ -1,4 +1,4 @@
-import { EventImg, Logo, Mine_logo, Render } from '@/public'
+import { EventImg, Logo, Mine_logo, Render, Render_mobile_only } from '@/public'
 import Image from 'next/image'
 import React from 'react'
 
@@ -170,7 +170,7 @@ const SingleEvent = () => {
                             </div>
 
                             <div id="popup15" className="overlay">
-                                <div className="get_ticketp">
+                                <div className="get_ticketp2">
 
 
                                     <div className="get_ticket_over">
@@ -193,24 +193,24 @@ const SingleEvent = () => {
 
                                             </div>
                                             <form action="" className="buy_ticket">
-                                                <label htmlFor="">Billing Information</label>
+                                                <label htmlFor="" className='yellow_cr'>Billing Information</label>
                                                 <div className="buy_ticket_row">
                                                     <input type="text" placeholder="First Name *" />
                                                     <input type="text" placeholder="Last Name *" />
-                                                    <input type="text" placeholder="Email *" />
+                                                    <input type="email"className='long_inp' placeholder="Email *" />
                                                 </div>
 
                                                 <div className="buy_ticket_row">
                                                     <input type="text" placeholder="Address Line 1 *" />
                                                     <input type="text" placeholder="Address Line 2" />
-                                                    <input type="text" placeholder="City *" />
+                                                    <input type="text" placeholder="City *" className='long_inp' />
                                                 </div>
                                                 <div className="buy_ticket_row">
                                                     <input type="text" placeholder="State *" />
                                                     <input type="text" placeholder="Postal *" />
                                                 </div>
                                                 <div className="pay_opt">
-                                                    <p>Payment Options</p>
+                                                    <p className='yellow_cr'>Payment Options</p>
                                                     <div>
                                                         <input type="radio" id="hue" name="pay_2" value="hue" checked />
                                                         <label htmlFor="hue">Apple Pay</label>

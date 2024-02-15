@@ -5736,9 +5736,6 @@ height: 27px;
         flex-direction: column;
     }
 
-    .buy_ticket_row {
-        flex-direction: column;
-    }
 
     .card_info2 {
         flex-wrap: wrap;

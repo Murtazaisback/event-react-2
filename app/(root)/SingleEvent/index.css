@@ -149,6 +149,21 @@ box-shadow: 2px 2px 4px 0px rgba(75, 75, 75, 0.75), 4px 4px 4px 0px rgba(71, 71,
     box-shadow: 0px 0px 40px 0px rgba(226,214,38,0.22);
 
 }
+.get_ticketp2 {
+    display: flex;
+    background: #000;
+    border-radius: 10px;
+    position: relative;
+    margin: auto;
+    margin-top: 100px;
+    justify-content: center;
+    /* align-items: center; */
+    width: 90%;
+    margin-top: 0;
+    height: 95vh;
+    box-shadow: 0px 0px 40px 0px rgba(226,214,38,0.22);
+
+}
 
 .get_ticket_over {
     display: flex;
@@ -321,6 +336,7 @@ box-shadow: 2px 2px 4px 0px rgba(75, 75, 75, 0.75), 4px 4px 4px 0px rgba(71, 71,
 }
 
 @media screen and (max-width: 768px) {
+   
     .get_ticket_carti {
         width: 100%;
         /* height: 10; */
@@ -329,6 +345,10 @@ box-shadow: 2px 2px 4px 0px rgba(75, 75, 75, 0.75), 4px 4px 4px 0px rgba(71, 71,
         border-radius: 10px;
         
     }
+    .buy_ticket .yellow_cr{
+        font-size: 19px;
+    }
+    
     .get_ticket_overi{
         margin-left: 0px !important;
     }
@@ -350,6 +370,19 @@ box-shadow: 2px 2px 4px 0px rgba(75, 75, 75, 0.75), 4px 4px 4px 0px rgba(71, 71,
         height: 80%;
     }
     .get_ticketp {
+        flex-direction: column;
+        margin-top: 100px;
+        align-items: center;
+        gap: 20px;
+        width: 100%;
+        padding: 10px;
+        display: flex;
+        height: auto;
+        margin: 0;
+        box-shadow: none !important;
+        border-radius: 0;
+    }
+    .get_ticketp2 {
         flex-direction: column-reverse;
         margin-top: 100px;
         align-items: center;
@@ -407,10 +440,25 @@ box-shadow: 2px 2px 4px 0px rgba(75, 75, 75, 0.75), 4px 4px 4px 0px rgba(71, 71,
         flex-direction: column;
     }
 
-    .buy_ticket_row {
+    .buy_ticket{
+        display: flex;
         flex-direction: column;
+        gap: 10px;
+    }
+    .buy_ticket_row {
+        /* flex-direction: column; */
+        flex-wrap: wrap !important;
     }
 
+    .main_buy_form{
+        margin: 10px;
+    }
+    .buy_ticket_row input{
+        width: 160px;
+    }
+    .long_inp{
+        width: 100% !important;
+    }
     .card_info2 {
         flex-wrap: wrap;
         margin: 0;
@@ -440,5 +488,12 @@ box-shadow: 2px 2px 4px 0px rgba(75, 75, 75, 0.75), 4px 4px 4px 0px rgba(71, 71,
         display: flex;
     }
 
+
+    .card_no{
+        width: 300px;
+    }
+    .pay_opt{
+        gap: 15px;
+    }
 }
 

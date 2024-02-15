@@ -27,6 +27,8 @@ import General_img from './Designer - General Admission inspector 1.png'
 import Dawn_img from './pexels-dawn-lio-2177814 1.png'
 import One_img from './1.png'
 
+import Render_mobile_only from './Renderer Mobile - Selected seat 2 1.png'
+
 
 
 export{
@@ -57,6 +59,6 @@ export{
     General_img,
     Dawn_img,
     One_img,
-    
+    Render_mobile_only,
     
 }

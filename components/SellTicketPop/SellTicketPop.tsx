@@ -1,4 +1,4 @@
-import { Render } from '@/public'
+import { Render, Render_mobile_only } from '@/public'
 import Image from 'next/image'
 import React from 'react'
 import { RiCloseFill } from 'react-icons/ri'
@@ -9,10 +9,11 @@ const SellTicketPop = () => {
             <div className="get_ticket_overi">
 
                 <h1>Event Title</h1>
-                {/* <p className="res_yellow">Saturday, July 5, 2025 at 7:30 pm PST</p> */}
+                <p className="res_yellow">Saturday, July 5, 2025 at 7:30 pm PST</p>
                 <p className="res_p">Select your seat(s) or table(s) below to add it to your cart</p>
             </div>
-            <Image alt='' src={Render} className="res_triangle" />
+            <Image alt='' src={Render} className="res_triangle res_none" />
+            <Image alt='' src={Render_mobile_only} className="res_triangle pc_none" />
             <div className="promo_ticket">
                 <form action="" className="promo_cl res_none">
                     <label htmlFor="promo">Promo Code</label>
