@@ -10,7 +10,7 @@ import { RiMoneyDollarCircleLine } from 'react-icons/ri'
 import { SlLocationPin } from 'react-icons/sl'
 import '../SmsCampaigns/index.css'
 
-const SendMessage = () => {
+const SendMessageOpt = () => {
     return (
         <div className='main_container'>
             <div className="dashboard_main">
@@ -33,7 +33,7 @@ const SendMessage = () => {
                                             <div className="headings_trail">
                                                 <h2>Sned a message (trial)</h2>
                                             </div>
-                                            <p style={{textAlign: 'center'}}>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Exercitationem atque, voluptates earum quibusdam illum nihil error necessitatibus.</p>
+                                            <p style={{textAlign: 'center'}}>2u287879Lorem ipsum dolor, sit amet consectetur adipisicing elit. Exercitationem atque, voluptates earum </p>
                                             <select name="" id="" className='sms_Credits_input'>
                                                 <option value="" disabled selected>Select your contacts group</option>
                                                 <option value="" >d</option>
@@ -89,4 +89,4 @@ const SendMessage = () => {
     )
 }
 
-export default SendMessage
+export default SendMessageOpt

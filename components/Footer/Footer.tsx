@@ -6,6 +6,7 @@ import { FaInstagram } from "react-icons/fa";
 import { FaTwitter } from "react-icons/fa";
 
 import { Mine_logo } from '@/public'
+import { FaXTwitter } from 'react-icons/fa6';
 
 const Footer = () => {
   return (
@@ -36,7 +37,7 @@ const Footer = () => {
                         <li><a href="/NewEvent">Create an Event</a></li>
                         <li><a href="/Dashboard">Organizer Dashboard</a></li>
                         <li><a href="/Pricing">Pricing</a></li>
-                        <li><a href="/">Privacy Policy</a></li>
+                        <li><a href="/smsTrial">Privacy Policy</a></li>
                         <li><a href="/Terms_and_Conditions">Terms and Conditions</a></li>
                     </ul>
                 </div>
@@ -52,7 +53,8 @@ const Footer = () => {
 
                         </a>
                         <a href="https://twitter.com/EventVisionary">
-                            <FaTwitter className="Footer_img"/>
+
+                            <FaXTwitter className="Footer_img"/>
                         </a>
                     </div>
                 </div>

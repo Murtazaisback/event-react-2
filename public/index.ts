@@ -20,11 +20,11 @@ import SellTick_img from './Designer - Section 1.png'
 import TicketPF_Img from './EV logo no background 1.png'
 import Events_imgs from "./Rectangle 121.png"
 
-import Pexel_imgg from './pexels-jack-gittoes-761543 2.png'
+import Pexel_imgg from './WhatsApp Image 2024-02-19 at 9.29.10 PM (1).jpeg'
 import Upload_img from './upload 1.png'
 import Mulitple from './Designer - Multiple floors 1.png'
 import General_img from './Designer - General Admission inspector 1.png'
-import Dawn_img from './pexels-dawn-lio-2177814 1.png'
+import Dawn_img from './WhatsApp Image 2024-02-19 at 9.29.10 PM.jpeg'
 import One_img from './1.png'
 
 import Render_mobile_only from './Renderer Mobile - Selected seat 2 1.png'

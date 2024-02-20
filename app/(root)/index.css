@@ -124,7 +124,7 @@ main {
 
 .btn {
     border-radius: 25px;
-    padding: 10px 15px;
+    padding: 9px 9px;
     text-align: center;
     transition: all ease-in-out 0.25s;
     font-size: 17px;
@@ -318,6 +318,7 @@ main {
 
 .main_imag {
     width: 100%;
+    height: 450px;
 }
 
 .collage_img {
@@ -466,8 +467,19 @@ main {
 .small_icon {
     font-size: 1.5rem !important;
 }
+.about_img_main{
+    width: 550px;
+    height: 450px;
+}
 
 
+.sell_tickets_warp{
+    /* margin-top: 100px ; */
+    
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
 
 
 @media screen and (max-width: 1124px) {
@@ -479,6 +491,9 @@ main {
 }
 
 @media screen and (max-width: 1024px) {
+    .main_imag{
+        height: 250px;
+    }
     .about_img_main{
         width: 100%;
         height: 100%;

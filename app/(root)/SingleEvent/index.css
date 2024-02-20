@@ -335,6 +335,77 @@ box-shadow: 2px 2px 4px 0px rgba(75, 75, 75, 0.75), 4px 4px 4px 0px rgba(71, 71,
     margin-top: 390px;
 }
 
+.counter-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    /* margin-left: 10px; */
+  }
+
+  .counter-btn {
+    padding: 4px 10px;
+    /* margin: 0 10px; */
+    font-size: 18px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    border-radius: 50%;
+    background: none;
+    border: 1px solid gray;
+    color: gray;
+}
+
+.minuss {
+    color: white;
+    border: 1px solid white;
+    background: none;
+  }
+
+  .minuss.disabled {
+    background: none ;
+  }
+
+  .pluss {
+    color: white;
+    background: none;
+    border: 1px solid white;
+  }
+
+  .counter-value {
+    font-size: 24px;
+    /* margin: 0 20px; */
+  }
+  .sell_tickets_warp2{
+    /* margin-top: 100px ; */
+    margin: 0 !important;
+    
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .sell_tickets_box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 90px;
+}
+.sell_ticket_btns{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.Ticket_p{
+    margin-left: 170px;
+    margin-top: 30px;
+}
+.sell_tickets_box_in {
+  display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 60px ;
+    
+  }
 @media screen and (max-width: 768px) {
    
     .get_ticket_carti {
@@ -381,6 +452,7 @@ box-shadow: 2px 2px 4px 0px rgba(75, 75, 75, 0.75), 4px 4px 4px 0px rgba(71, 71,
         margin: 0;
         box-shadow: none !important;
         border-radius: 0;
+        padding-bottom: 165vh;
     }
     .get_ticketp2 {
         flex-direction: column-reverse;

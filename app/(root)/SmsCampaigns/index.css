@@ -89,6 +89,9 @@
 
 .sms_area_right {
     width: 35%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
 
 .Subscriber_Stats {
@@ -221,6 +224,9 @@
     flex-direction: column;
     gap: 7px;
 }
+.sms_infos p{
+    font-size: 15px;
+}
 
 .sms_infos textarea {
     resize: none;
@@ -253,9 +259,9 @@
     border-radius: 15px;
     background: #212121;
     box-shadow: 2px 4px 4px 0px #636363 inset, -2px -2px 4px 0px #636363 inset;
-    margin-top: 30px;
+    margin-top: 58px;
     padding: 15px;
-    width: 80%;
+    width: 100%;
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -264,7 +270,7 @@
 
 .prev_message_box {
     width: 100%;
-    height: 350px;
+    height: 325px;
     padding: 5px;
     background: white;
 }

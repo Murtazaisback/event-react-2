@@ -449,7 +449,7 @@ body {
 
 .btn {
     border-radius: 25px;
-    padding: 10px 15px;
+    padding: 9px 9px;
     text-align: center;
     transition: all ease-in-out 0.25s;
     font-size: 17px;
@@ -466,7 +466,7 @@ body {
 
 .sm {
     padding: 10px;
-    font-size: 18px !important;
+    font-size: 16px !important;
     background: #be9e44;
 }
 
@@ -1243,8 +1243,8 @@ box-shadow: 2px 2px 4px 0px #212121 inset, -2px -2px 4px 0px #25251F inset, 10px
     left: 0px;
     bottom: 4px;
     top: -1px;
-    /* background-color: #be9e44; */
-    background: linear-gradient(90deg, rgba(190,158,68,1) 0%, rgba(216,198,144,1) 100%);
+    background-color: var(--color-yellow);
+    /* background: linear-gradient(90deg, rgba(190,158,68,1) 0%, rgba(216,198,144,1) 100%); */
     -webkit-transition: .4s;
     transition: .4s;
 }
@@ -1254,7 +1254,7 @@ box-shadow: 2px 2px 4px 0px #212121 inset, -2px -2px 4px 0px #25251F inset, 10px
 }
 
 input:checked+.slider {
-    background-color: var(--color-yellow);
+    background-color: rgb(46, 215, 108);
 }
 
 input:focus+.slider {
@@ -5141,16 +5141,110 @@ height: 27px;
     background-image: url("../public/bg-triangle.svg");
   }
 
+  .Free_trail_box{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 100px;
+    margin-top: 100px;
+    width: 100%;
+    /* gap: 10px; */
+  }
 
+.Free_trail{
+    width: 48.5%;
+    /* height: 100%; */
+    background: transparent;
+    box-shadow: 0px 0px 14px 0px rgba(116,116,116,0.78) inset;
+    overflow: hidden;
+    border-radius: 5px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.headings_trail{
+    text-align: center;
+    color: transparent;
+    background: linear-gradient(90deg, rgba(190,158,68,1) 0%, rgba(216,198,144,1) 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+}
 
+.headings_trail h2{
+    font-size: 25px;
+}
+.Sign_form{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    row-gap: 30px;
+    justify-content: space-between;
 
+}
+.Sign_form_box{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.sing_form_input{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    text-transform: capitalize;
+}
+.sing_form_input input{
+    padding: 8px 10px;
+    width: 280px;
+    border-radius: 25px;
+    outline: none;
+    border: none;
+}
+.sign_check{
+    display: flex;
+    gap: 20px;
+    text-transform: capitalize;
+}
+.trial_box_warp{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+.trial_box{
+    background: black;
+    box-shadow: 0px 0px 14px 0px rgba(95,95,95,0.78) inset;
+    width: 45%;
+    margin: auto;
+    border-radius: 10px;
+    overflow: hidden;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
 
+.yellow_imp{
+    background: linear-gradient(90deg, rgba(190,158,68,1) 0%, rgba(216,198,144,1) 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
 
+}
 
-
-
+.opt_butn{
+    margin: auto;
+}
 /*Stying for small screens*/
 @media screen and (max-width: 860px) {
+    .Free_trail{
+        width: 100%;
+    }
+    .Free_trail_box{
+        gap: 20px;
+    }
     .order_sum_text {
         width: 100%;
     }

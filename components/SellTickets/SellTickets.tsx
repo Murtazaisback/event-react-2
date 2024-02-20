@@ -5,6 +5,7 @@ import ArchivedBack from '../ArchivedBack/ArchivedBack'
 import Image from 'next/image'
 import "./index.css"
 import TicketCounter from '../TicketCounter/TicketCounter'
+import SellTicketwarp from '../SellTicketwarp/SellTicketwarp'
 
 interface CustomComponentProps {
     showBackButton?: boolean;
@@ -42,15 +43,7 @@ const SellTicketsCom: React.FC<CustomComponentProps> = ({ title = "", showBackBu
                     {title && <h1>{title}</h1>}
                     <p>12/31/2099 - 01/02/2100</p>
                     <p>7:50 PM PST</p>
-                    <div className="sell_tickets_warp">
-                        <TicketCounter Addclass='sell_tickets_box'/>
-                        <TicketCounter Addclass='sell_tickets_box'/>
-                        <p className='Ticket_p'>Ticket Type Name (Multi-Level)</p>
-                        <TicketCounter Addclass='sell_tickets_box_in'/>
-                        <TicketCounter Addclass='sell_tickets_box_in'/>
-
-                        
-                    </div>
+                    <SellTicketwarp/>
 
 
                 </div>

@@ -21,14 +21,15 @@ const MainMenusEx = () => {
                     <FaGear className=" menu_dash_i" />
                     <span className=" link_name">SETTINGS</span>
                 </Link>
-            </li><li>
+            </li>
+            {/* <li>
                 <div className="iocn-link">
                     <Link href="/SmsCampaigns">
                         <FaRegMessage className=" menu_dash_i" />
                         <span className="link_name">SMS CAMPAIGNS</span>
                     </Link>
                 </div>
-            </li>
+            </li> */}
             <li>
                 <div className="iocn-link">
                     <Link href="/myaccount">
