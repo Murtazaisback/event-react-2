@@ -452,7 +452,7 @@ box-shadow: 2px 2px 4px 0px rgba(75, 75, 75, 0.75), 4px 4px 4px 0px rgba(71, 71,
         margin: 0;
         box-shadow: none !important;
         border-radius: 0;
-        padding-bottom: 165vh;
+        padding-bottom: 200px;
     }
     .get_ticketp2 {
         flex-direction: column-reverse;
@@ -466,6 +466,10 @@ box-shadow: 2px 2px 4px 0px rgba(75, 75, 75, 0.75), 4px 4px 4px 0px rgba(71, 71,
         margin: 0;
         box-shadow: none !important;
         border-radius: 0;
+        padding-bottom: 200px;
+    }
+    .overlay:target ~ body {
+        display: none !important;
     }
     .res_triangle{
         width: 100%;

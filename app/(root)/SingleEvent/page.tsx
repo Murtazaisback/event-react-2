@@ -36,6 +36,15 @@ const SingleEvent = () => {
     const increment = () => {
         setCount(count + 1);
     };
+    const [isOverlayOpen, setIsOverlayOpen] = useState(false);
+
+    const openOverlay = () => {
+        setIsOverlayOpen(true);
+    };
+
+    const closeOverlay = () => {
+        setIsOverlayOpen(false);
+    };
 
     return (
         <>
