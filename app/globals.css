@@ -1243,8 +1243,8 @@ box-shadow: 2px 2px 4px 0px #212121 inset, -2px -2px 4px 0px #25251F inset, 10px
     left: 0px;
     bottom: 4px;
     top: -1px;
-    background-color: var(--color-yellow);
-    /* background: linear-gradient(90deg, rgba(190,158,68,1) 0%, rgba(216,198,144,1) 100%); */
+    /* background-color: var(--color-yellow); */
+    background: linear-gradient(90deg, rgba(190,158,68,1) 0%, rgba(216,198,144,1) 100%);
     -webkit-transition: .4s;
     transition: .4s;
 }
