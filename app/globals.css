@@ -21,7 +21,6 @@
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent !important;
-  /* font-weight: 700 !important; */
   border: none !important;
 }
 * {
@@ -279,13 +278,9 @@ body {
 .navs-links li a {
     text-decoration: none;
     margin: 0 0.7vw;
-    transition: all ease-in-out 0.25s;
+    /* transition: all ease-in-out 0.25s; */
     font-size: 15px;
     /* background: linear-gradient(90deg, rgba(190,158,68,1) 0%, rgba(216,198,144,1) 100%); */
-}
-
-.navs-links li a:hover {
-    /* color: var(--color-yellow); */
 }
 
 .navs-links li {
