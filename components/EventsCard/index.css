@@ -4,9 +4,6 @@
     width: 265px;
 }
 
-.event_card:hover {
-    transform: translateY(-10px);
-}
 
 .card_menu {
     display: flex;
@@ -28,7 +25,7 @@
 .sub_card_menu {
     position: absolute;
     top: -45%;
-    left: 43%;
+    left: 33%;
     border-radius: 10px;
     background: #212121;
     padding: 15px;

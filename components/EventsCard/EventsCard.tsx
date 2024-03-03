@@ -35,11 +35,11 @@ const EventsCard: React.FC<EventsCardProps> = ({ showMenuButton = true, eventDat
                             {isMenuOpen && (
                                 <div className="sub_card_menu">
                                     {/* Add your menu items here */}
-                                    <Link href="">Pause Ticket Sales</Link>
-                                    <Link href="">End Ticket Sales</Link>
-                                    <Link href="">Cancel Event</Link>
-                                    <Link href="">Un-publish Event</Link>
-                                    <Link href="">Archive Event</Link>
+                                    <Link href="/ticketprices">Pause Ticket Sales</Link>
+                                    <Link href="/ticketprices">End Ticket Sales</Link>
+                                    <Link href="/eventdetails">Cancel Event</Link>
+                                    <Link href="/eventdetails">Un-publish Event</Link>
+                                    <Link href="/eventdetails">Archive Event</Link>
                                 </div>
                             )}
                         </div>

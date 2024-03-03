@@ -461,7 +461,7 @@ body {
 
 .sm {
     padding: 10px;
-    font-size: 16px !important;
+    font-size: 14px !important;
     background: #be9e44;
 }
 
@@ -1592,7 +1592,7 @@ input:checked+.slider:before {
 .event_cards {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-evenly;
     gap: 30px;
     flex-wrap: wrap;
 }

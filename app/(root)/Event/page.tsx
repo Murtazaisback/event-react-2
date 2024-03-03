@@ -163,7 +163,7 @@ const Event = () => {
                                         <div className="new_event_list">
 
                                             <h4>List a New Event</h4>
-                                            <a href="./newevent.html">
+                                            <a href="./NewEvent">
                                                 {/* <i className='bx bx-plus-circle'  ></i> */}
                                                 <CiCirclePlus className="new_event_list_i" />
 

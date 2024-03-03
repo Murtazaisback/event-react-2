@@ -141,7 +141,7 @@ const Dashboard = () => {
                                 <div className="new_event_list">
 
                                     <h4>List a New Event</h4>
-                                    <Link href="/newevent">
+                                    <Link href="/NewEvent">
                                         <CiCirclePlus className="Add_event_i" />
 
                                     </Link>
