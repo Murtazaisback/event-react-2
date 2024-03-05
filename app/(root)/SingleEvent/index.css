@@ -199,12 +199,14 @@ box-shadow: 2px 2px 4px 0px rgba(75, 75, 75, 0.75), 4px 4px 4px 0px rgba(71, 71,
     border: 1px solid #be9e44;
     background: black;
     padding: 10px;
+    color: white;
 }
 
 .promo_ticket_input input {
     background: transparent;
     border: none;
     outline: none;
+    color: white;
 }
 
 .promo_ticket_input button {
@@ -369,6 +371,7 @@ box-shadow: 2px 2px 4px 0px rgba(75, 75, 75, 0.75), 4px 4px 4px 0px rgba(71, 71,
     color: white;
     background: none;
     border: 1px solid white;
+    margin-top: -10px;
   }
 
   .counter-value {

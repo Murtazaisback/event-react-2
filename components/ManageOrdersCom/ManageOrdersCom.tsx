@@ -78,6 +78,9 @@ const ManageOrdersCom: React.FC<ManageOrdersComProps> = ({title = '',  label = '
                                 </a>
                             </div>
                             <div id="popup5" className="overlay ">
+                               
+
+                                <div className="order_deatils">
                                 <a className="jclose" href="#">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="25"
                                         height="25" viewBox="0 0 25 25" fill="none">
@@ -96,8 +99,6 @@ const ManageOrdersCom: React.FC<ManageOrdersComProps> = ({title = '',  label = '
                                         </defs>
                                     </svg>
                                 </a>
-
-                                <div className="order_deatils">
                                     <div className="order_dinfo">
 
                                         <div className="order_t">

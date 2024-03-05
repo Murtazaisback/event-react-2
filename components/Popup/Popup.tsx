@@ -14,7 +14,7 @@ const Popup: React.FC<PopupProps> = ({ isOpen, onClose,content="" }) => {
         <div className={`popup ${isOpen ? 'open' : ''}`}>
             <div className="popup-content">
                 <p>{content}</p>
-                <a className="jclose" href="#" onClick={onClose}>
+                <a className="jclose" href="#pop" onClick={onClose}>
                     <RiCloseFill color="#FAE100" className="Xmarks" />
                 </a>
             </div>

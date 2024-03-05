@@ -44,15 +44,15 @@ const Footer = () => {
                 <div className="footer_info_follow">
                     <b>Follow Us.</b>
                     <div className="footer_info_follow_img">
-                        <a href="https://www.facebook.com/profile.php?id=61554004420226">
+                        <a href="https://www.facebook.com/profile.php?id=61554004420226" target='_blank'>
                             <FaFacebookF className="Footer_img"/>
 
                         </a>
-                        <a href="https://www.instagram.com/eventvisionary/?igshid=MzMyNGUyNmU2YQ%3D%3D">
+                        <a href="https://www.instagram.com/eventvisionary/?igshid=MzMyNGUyNmU2YQ%3D%3D" target='_blank'>
                             <FaInstagram className="Footer_img"/>
 
                         </a>
-                        <a href="https://twitter.com/EventVisionary">
+                        <a href="https://twitter.com/EventVisionary" target='_blank'>
 
                             <FaXTwitter className="Footer_img"/>
                         </a>

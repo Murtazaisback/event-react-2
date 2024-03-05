@@ -32,6 +32,9 @@
     color: white;
     background: none;
     border: 1px solid white;
+    padding: 4px 10px ;
+    padding-top: 3px;
+
   }
 
   .counter-value {

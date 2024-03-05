@@ -289,7 +289,7 @@ const SingleEvent = () => {
 
                                         </a>
                                         <a className="fclose pc_none" href="#popup14">
-                                            <IoIosArrowBack />
+                                            <IoIosArrowBack  className="fclose_i"/>
                                         </a>
                                         <div className="get_ticket_cart">
                                             <div className="get_ticket_overi pc_none">
@@ -408,8 +408,8 @@ const SingleEvent = () => {
                                                 <RiCloseFill color="#FAE100" className="Xmarks" />
 
                                             </a>
-                                            <a className="fclose pc_none" href="#popup14">
-                                                <IoIosArrowBack />
+                                            <a className="fclose pc_none" href="#popup15">
+                                                <IoIosArrowBack  className="fclose_i"/>
                                             </a>
 
                                             <div className="get_ticket_overi res_m">
